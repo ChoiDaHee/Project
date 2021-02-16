@@ -36,7 +36,7 @@ a{
     padding: 8px 12px;
 }
 .navbar_menu li:hover{
-    background-color: var(--background-color);
+    background-color: #d49466;
     border-radius: 4px;
 }
 
