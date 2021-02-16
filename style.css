@@ -49,7 +49,7 @@ a{
 .navbar_icons li{
     padding: 8px 12px;
 }
-.navbar_toogleBtn{
+.btn{
     display: none;
     position: absolute;
     right: 32px;
@@ -78,7 +78,7 @@ a{
         justify-content: center;
         width: 100%;
     }
-    .navbar_toogleBtn{
+    .btn{
         display: block;
     }
     .navbar_menu.active,
