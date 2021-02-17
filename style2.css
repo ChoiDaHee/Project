@@ -34,10 +34,41 @@ a{
     border-radius: 4px;
 }
 .navbar_icons{
-    color: rgb(9, 93, 114);
+    color: #fff;
     padding-left: 0;
 }
 .navbar_icons i{
     padding: 8px 12px;
 }
-
+.btn{
+    display: none;
+    font-size: 24px;
+    color: rgb(9, 93, 114);
+    position: absolute;
+    right: 32px;
+}
+@media screen and (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar_icons{
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .btn{
+        display: block;
+    }
+    .navbar_menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+}
