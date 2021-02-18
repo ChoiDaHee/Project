@@ -4,7 +4,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: rgb(207, 196, 196);
 }
 
 .navbar{
@@ -15,7 +15,7 @@ a{
     padding: 8px 24px;
 }
 .navbar_logo{
-    color: #fff;
+    color: rgb(207, 196, 196);
     font-size: 24px;
 }
 .navbar_logo i{
@@ -34,7 +34,7 @@ a{
     border-radius: 4px;
 }
 .navbar_icons{
-    color: #fff;
+    color: rgb(207, 196, 196);
     padding-left: 0;
 }
 .navbar_icons i{
