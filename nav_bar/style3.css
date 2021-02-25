@@ -25,3 +25,20 @@ a{
     display: flex;
     padding-left: 0;
 }
+.navbar_menu li{
+    padding: 8px 12px;
+}
+
+.navbar_icons{
+    padding-left: 0;
+    font-size: 24px;
+}
+.navbar_icons i{
+    padding-left: 8px;
+}
+
+@media and screen (max-width: 768px){
+    .navbar{
+        flex-direction:
+    }
+}
