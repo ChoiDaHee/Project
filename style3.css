@@ -1,0 +1,27 @@
+body{
+   margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    background-color: #a69b97;
+}
+.navbar_logo{
+    font-size: 32px;
+}
+.navbar_logo i{
+    color: #efdcd5;
+}
+
+.navbar_menu{
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
