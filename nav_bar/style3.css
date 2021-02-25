@@ -1,27 +1,33 @@
+:root{
+    --text-color: rgb(250, 244, 244);
+    --background-color: #a69b97;
+    --accent-color: #efdcd5;
+}
+
 body{
    margin: 0;
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 24px;
-    background-color: #a69b97;
+    background-color: var(--background-color);
 }
 .navbar_logo{
     font-size: 28px;
 }
 .navbar_logo i{
-    color: #efdcd5;
+    color: var(--accent-color);
 }
 .btn1{
     display: none;
     font-size: 28px;
-    color: #efdcd5;
+    color: var(--accent-color);
 }
 
 .navbar_menu{
@@ -40,13 +46,16 @@ a{
 
 .navbar_icons{
     font-size: 24px;
+    padding-left: 0;
 }
 .navbar_icons i{
-    padding-left: 8px;
+    padding: 8px 12px;
 }
 .btn{
     display: none;
     font-size: 28px;
+    position: absolute;
+    right: 32px;
 }
 @media screen and (max-width: 768px){
     .navbar{
@@ -70,12 +79,14 @@ a{
     .navbar_icons{
         display: none;
         width: 100%;
-        text-align: center;
+        justify-content: center;
         padding-top: 20px;
     }
     .btn{
-        display: block;
-        position: absolute;
-        right: 32px;
+        display: block;    
+    }
+    .navbar_menu.active,
+    .navbar_icons.active{
+        display: flex;
     }
 }
