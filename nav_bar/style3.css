@@ -13,9 +13,14 @@ a{
     background-color: #a69b97;
 }
 .navbar_logo{
-    font-size: 32px;
+    font-size: 28px;
 }
 .navbar_logo i{
+    color: #efdcd5;
+}
+.btn1{
+    display: none;
+    font-size: 28px;
     color: #efdcd5;
 }
 
@@ -28,17 +33,49 @@ a{
 .navbar_menu li{
     padding: 8px 12px;
 }
+.navbar_menu li:hover{
+    background-color: #d7ccc8;
+    border-radius: 4px;
+}
 
 .navbar_icons{
-    padding-left: 0;
     font-size: 24px;
 }
 .navbar_icons i{
     padding-left: 8px;
 }
-
-@media and screen (max-width: 768px){
+.btn{
+    display: none;
+    font-size: 28px;
+}
+@media screen and (max-width: 768px){
     .navbar{
-        flex-direction:
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar_logo>i{
+        display: none;
+    }
+    .btn1{
+        display: inline-block;
+    }
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar_menu li{
+        text-align: center;
+    }
+    .navbar_icons{
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .btn{
+        display: block;
+        position: absolute;
+        right: 32px;
     }
 }
