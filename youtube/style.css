@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    background-color: #000;
+    color: #fff;
+}
+.menu_logo{
+    font-size: 18px;
+}
+.menu_logo i{
+    color: red;
+}
+.menu_logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+video{
+   width: 100%;
+}
+
+.title .tag{
+    color: rgba(7, 7, 230, 0.781);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 12px;
+}
+.title .tit{
+    margin: 15px 50px 5px 12px;
+    position: relative;
+}
+.title .tit::after{
+    content: "▼";
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
