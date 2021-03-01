@@ -55,9 +55,19 @@ video{
     display: flex;
     justify-content: space-around;
 }
+.title .btn i{
+    color: gray;
+}
+.title .btn i:hover{
+    color: rgba(7, 7, 230, 0.781);
+}
 .title .profile{
     display: flex;
     align-items: center;
     border-top: 1px solid rgb(172, 172, 172);
     border-bottom: 1px solid rgb(172, 172, 172);
+    padding: 0px 12px;
+}
+.title .profile img{
+    border-radius: 50%;
 }
