@@ -52,7 +52,6 @@ video{
     text-align: center;
     font-size: 20px;
     margin: 12px 20px 20px;
-}
-.title .btn i{
-    
+    display: flex;
+    justify-content: space-around;
 }
