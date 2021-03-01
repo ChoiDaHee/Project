@@ -100,4 +100,12 @@ video{
 }
 .nextvideo .video1, .video2, .video3{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.video_sub p{
+    position: absolute;
+    left: 230px;
+    width: 390px;
 }
