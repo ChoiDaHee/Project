@@ -19,7 +19,9 @@ header{
     text-decoration: none;
     color: #fff;
 }
-
+.video{
+   
+}
 video{
    width: 100%;
 }
@@ -111,5 +113,5 @@ video{
 }
 
 @media screen and (min-width:768px){
-    
+
 }
