@@ -109,3 +109,7 @@ video{
     left: 230px;
     width: 390px;
 }
+
+@media screen and (min-width:768px){
+    
+}
