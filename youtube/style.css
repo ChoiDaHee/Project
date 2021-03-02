@@ -9,5 +9,12 @@ header{
     background: #000;
     color: #fff;
     height: 35px;
-    padding: 8px 24px;
+    padding: 8px 15px;
+}
+.menu_logo i{
+    color: red;
+}
+
+video{
+    width: 100%;
 }
