@@ -41,5 +41,25 @@ section{
 }
 .titleAndButton{
     display: flex;
-  
+}
+.titleAndButton .title{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.titleAndButton .morebtn{
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    color: rgb(121, 118, 118);
+}
+.metadata .views{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+.actions{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
 }
