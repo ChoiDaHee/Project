@@ -11,6 +11,7 @@
     <title>Youtube</title>
 </head>
 <body>
+    <!-- header -->
     <header>
         <div class="menu_logo">
             <i class="fab fa-youtube"></i>
@@ -22,28 +23,49 @@
         </div>
     </header>
 
+    <!-- video -->
     <section class="video">
-        <video src="https://youtu.be/kCK-e7oySnw" controls>fd</video>
+        <video src="https://youtu.be/kCK-e7oySnw" controls></video>
     </section>
     
-    <section class="title">
-        <p class="tag">#DreamCoding #DreamCoders #Ellie</p>
-        <p class="tit"><b>Clone Coding Youtube Mobile Website</b> 유투브 모바일 웹사이트 따라 만들기ㅣ프론트엔드 개발자 입문편 : <b>HTML, CSS, JAVASCRIPT...</b></p>
-        <p class="mini_tit">1M views 1 month ago</p>
-        <div class="btn">
-            <a href="#"><i class="fas fa-thumbs-up"></i></a>
-            <a href="#"><i class="fas fa-thumbs-down"></i></a>
-            <a href="#"><i class="fas fa-share"></i></a>
-            <a href="#"><i class="fas fa-plus"></i></a>
-            <a href="#"><i class="fas fa-flag"></i></a>
+    <!-- info -->
+    <section class="Info">
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#DreamCoding</li>
+                <li>#DreamCoders</li>
+                <li>#Ellie</li>
+            </ul>
+            <div class="titleAndButton">
+                <span class="title">Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기
+                    ㅣ프론트엔드 개발자 입문편:HTML, CSS, Javascript 드림코딩과 함께하는 프론트엔드 실전 입문편</span>
+                <button class="morebtn"><i class="fas fa-caret-down"></i></button>
+            </div>
+
+            <div class="views">
+                <span class="views">1M views 1 month ago</span>
+            </div>
         </div>
+        <ul class="actions">
+            <li><button><i class="fas fa-thumbs-up"></i><span>1K</span></button></li>
+            <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+            <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+            <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+            <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
+        </ul>
         <div class="profile">
-            <img src="img/profile.jpg" width="60" height="60" alt="프로필 사진">
-            <p class="elli"><b>드림코딩 by 엘리</b><br>1M Subscribers</p>
-            <p class="sub">SUBSCRIBE</p>
+            <div class="metadata">
+                <img src="img/profile.jpg" alt="프로필 사진">
+                <div class="info">
+                    <span class="name"></span>
+                    <span class="subscribers">1M subcribers</span>
+                </div>
+            </div>
+            <button class="subscribe">subscribe</button>
         </div>
     </section>
 
+    <!-- nextvideo -->
     <section class="nextvideo">
         <p>Up next</p>
         <div class="video_sub video1">
