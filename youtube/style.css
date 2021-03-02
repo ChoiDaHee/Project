@@ -27,3 +27,15 @@ video{
 section{
    margin: 0px 15px;
 }
+.Info .metadata .hashtags{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+}
+.hashtags li{
+    padding-right: 5px;
+    color: rgb(24, 76, 248);
+    font-size: 14px;
+    font-weight: bold;
+}
