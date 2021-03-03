@@ -63,3 +63,6 @@ section{
     justify-content: space-around;
     padding: 0;
 }
+.actions li i{
+    display: block;
+}
