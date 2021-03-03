@@ -127,3 +127,12 @@ section{
     color: gray;
     text-transform: uppercase;
 }
+
+.nextvideo{
+    padding: 8px 0px;
+}
+.nextvideo .title{
+    font-size: 15px;
+    color: gray;
+    font-weight: 600;
+}
