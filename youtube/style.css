@@ -131,8 +131,25 @@ section{
 .nextvideo{
     padding: 8px 0px;
 }
-.nextvideo .title{
+.nextvideo > .title{
     font-size: 15px;
     color: gray;
     font-weight: 600;
+}
+.nextvideo ul{
+    padding: 0;
+    margin-top: 12px;
+}
+.nextvideo ul .item{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nextvideo ul .item img{
+    margin-right: 10px;
+    wid
+}
+.nextvideo ul .item .info{
+    display: flex;
+    flex-direction: column;
 }
