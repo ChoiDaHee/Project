@@ -52,6 +52,11 @@ section{
     background: none;
     border: none;
     color: rgb(121, 118, 118);
+    outline: none;
+    transition: all 1s;
+}
+.titleAndButton .morebtn:hover{
+    transform: rotate(180deg);
 }
 .metadata .views{
     font-size: 12px;
@@ -65,4 +70,19 @@ section{
 }
 .actions li i{
     display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+.actions li i:hover{
+    color: rgb(24, 76, 248);
+}
+.actions button{
+    background: none;
+    border: none;
+    color: rgb(121, 118, 118);
+    outline: none;
+}
+.actions li span{
+    font-size: 12px;
+    font-weight: bold;
 }
