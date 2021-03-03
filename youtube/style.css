@@ -53,7 +53,7 @@ section{
     border: none;
     color: rgb(121, 118, 118);
     outline: none;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .titleAndButton .morebtn:hover{
     transform: rotate(180deg);
@@ -85,4 +85,45 @@ section{
 .actions li span{
     font-size: 12px;
     font-weight: bold;
+}
+.Info .profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    border-top: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid rgb(189, 189, 189);
+    padding: 5px 0px;
+}
+.Info .profile .metadata{
+    display: flex;
+    align-items: center;
+    width: 317.21px;
+}
+.profile .metadata img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile .metadata .info{
+    display: flex;
+    flex-direction: column;
+}
+.profile .metadata .info .name{
+    font-weight: bold;
+}
+.profile .metadata .info .subscribers{
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+}
+.profile .subscribe{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
 }
