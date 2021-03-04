@@ -28,6 +28,9 @@ video{
 section{
    margin: 0px 15px;
 }
+.Info{
+   
+}
 .Info .metadata .hashtags{
     margin-top: 5px;
     margin-bottom: 10px;
@@ -181,5 +184,12 @@ section{
 }
 
 @media screen and (min-width: 768px){
-    
+    .Info{
+        float: left;
+        margin: 0 15px;
+        width: 50%;
+    }
+    .nextvideo{
+        
+    }
 }
