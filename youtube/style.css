@@ -153,7 +153,7 @@ section{
 .nextvideo ul .item .info{
     display: flex;
     flex-direction: column;
-    margin-right: 40px;
+    margin-right: 25px;
     height: 120px;
 }
 .nextvideo ul .item .info .title{
@@ -172,5 +172,4 @@ section{
     background: none;
     border: none;
     outline: none;
-   
 }
