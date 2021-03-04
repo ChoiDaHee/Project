@@ -142,19 +142,21 @@ section{
 }
 .nextvideo ul .item{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    position: relative;
 }
 .nextvideo ul .item img{
     margin-right: 10px;
-    width: 220px;
-    height: 120px;
+    width: 168px;
+    height: 94px;
 }
 .nextvideo ul .item .info{
     display: flex;
     flex-direction: column;
     margin-right: 25px;
     height: 120px;
+    position: absolute;
+    left: 180px;
 }
 .nextvideo ul .item .info .title{
     font-size: 15px;
@@ -172,4 +174,7 @@ section{
     background: none;
     border: none;
     outline: none;
+    position: absolute;
+    top: 8px;
+    right: 0px;
 }
