@@ -20,7 +20,7 @@ header{
 .video{
     margin: 0;
 }
-video{
+.video video{
     width: 100%;
     /* Position: fixed; */
 }
@@ -37,7 +37,7 @@ section{
     padding: 0;
     display: flex;
 }
-.hashtags li{
+.Info .metadata .hashtags li{
     padding-right: 5px;
     color: rgb(24, 76, 248);
     font-size: 14px;
