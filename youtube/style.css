@@ -43,14 +43,14 @@ section{
     font-size: 14px;
     font-weight: bold;
 }
-.titleAndButton{
+.Info .metadata .titleAndButton{
     display: flex;
 }
-.titleAndButton .title{
+.Info .metadata .titleAndButton .title{
     margin-bottom: 5px;
     font-size: 15px;
 }
-.titleAndButton .morebtn{
+.Info .metadata .titleAndButton .morebtn{
     width: 20px;
     height: 20px;
     background: none;
