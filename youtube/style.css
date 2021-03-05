@@ -19,10 +19,13 @@ header{
 }
 .video{
     margin: 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
 }
 .video video{
     width: 100%;
-    /* Position: fixed; */
+    max-width: 1000px;
 }
 
 section{
