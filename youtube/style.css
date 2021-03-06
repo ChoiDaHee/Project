@@ -153,7 +153,6 @@ header{
 .nextvideo ul .item{
     display: flex;
     margin-bottom: 20px;
-    position: relative;
 }
 .nextvideo ul .item img{
     margin-right: 10px;
@@ -165,8 +164,6 @@ header{
     flex-direction: column;
     margin-right: 25px;
     height: 120px;
-    position: absolute;
-    left: 180px;
 }
 .nextvideo ul .item .info .title{
     font-size: 15px;
@@ -184,20 +181,17 @@ header{
     background: none;
     border: none;
     outline: none;
-    position: absolute;
-    top: 8px;
-    right: 0px;
     cursor: pointer;
+}
+.infoandnextvideo{
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 768px){
-    .Info{
-        float: left;
-        margin: 0 15px;
-        width: 50%;
-    }
-    .nextvideo{
-        padding-top: 12px;
+    .infoandnextvideo{
+        display: flex;
+        flex-direction: row;
     }
 
 }
