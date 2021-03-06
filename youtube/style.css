@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 ul{
     list-style: none;
@@ -30,15 +31,12 @@ header{
     max-width: 1000px;
 }
 
-section{
-   margin: 0px 15px;
-}
 .Info{
-   
+   padding: 12px;
 }
 .Info .metadata .hashtags{
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 0;
+    /* margin-bottom: 10px; */
     padding: 0;
     display: flex;
 }
@@ -138,9 +136,9 @@ section{
 }
 
 .nextvideo{
-    padding: 8px 0px;
+    padding: 0px 12px;
 }
-.nextvideo > .title{
+.nextvideo > .title{    
     font-size: 15px;
     color: gray;
     font-weight: 600;
@@ -195,6 +193,6 @@ section{
         width: 50%;
     }
     .nextvideo{
-        
+        padding-top: 12px;
     }
 }
