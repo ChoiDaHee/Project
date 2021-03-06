@@ -1,4 +1,4 @@
-body{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,7 +36,7 @@ header{
 }
 .Info .metadata .hashtags{
     margin: 0;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     padding: 0;
     display: flex;
 }
@@ -52,13 +52,18 @@ header{
 .Info .metadata .titleAndButton .title{
     margin-bottom: 5px;
     font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
 }
 .Info .metadata .titleAndButton .morebtn{
     width: 20px;
     height: 20px;
     background: none;
     border: none;
-    color: rgb(121, 118, 118);
+    cursor: pointer;
     outline: none;
     transition: all 0.5s;
 }
@@ -74,11 +79,13 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 0;
+    margin: 15px 0px;
 }
 .actions li i{
     display: block;
     margin-bottom: 8px;
     font-size: 18px;
+    cursor: pointer;
 }
 .actions li i:hover{
     color: rgb(24, 76, 248);
@@ -184,6 +191,7 @@ header{
     position: absolute;
     top: 8px;
     right: 0px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px){
