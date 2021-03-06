@@ -31,7 +31,7 @@ header{
     max-width: 1000px;
 }
 
-.Info{
+.infoandnextvideo > .Info{
    padding: 12px;
 }
 .Info .metadata .hashtags{
@@ -141,51 +141,27 @@ header{
 .nextvideo{
     padding: 0px 12px;
 }
-.nextvideo > .title{    
-    font-size: 15px;
-    color: gray;
-    font-weight: 600;
-}
-.nextvideo ul{
-    padding: 0;
-    margin-top: 12px;
-}
-.nextvideo ul .item{
-    display: flex;
-    margin-bottom: 20px;
-}
-.nextvideo ul .item img{
-    margin-right: 10px;
-    width: 168px;
-    height: 94px;
-}
-.nextvideo ul .item .info{
-    display: flex;
-    flex-direction: column;
-    margin-right: 25px;
-    height: 120px;
-}
-.nextvideo ul .item .info .title{
-    font-size: 15px;
-}
-.nextvideo ul .item .info .name{
+.nextvideo > .title{
+    display: inline-block;
     font-size: 13px;
     color: gray;
+    margin-bottom:12px;
 }
-.nextvideo ul .item .info .views{
-    font-size: 12px;
-    color: gray;
-    font-weight: bold;
-}
-.nextvideo ul .item .moreBtn{
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.infoandnextvideo{
+.nextvideo .item{
     display: flex;
-    flex-direction: column;
+}
+.nextvideo .item img{
+    
+}
+.nextvideo .info{
+    display: flex;
+}
+.nextvideo .item .info .title{
+    font-size: 15px;
+}
+.nextvideo .item .info .name,
+.nextvideo .item .info, .views{
+    font-size: 12px;
 }
 
 @media screen and (min-width: 768px){
