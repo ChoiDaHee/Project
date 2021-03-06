@@ -41,26 +41,23 @@ header{
     display: flex;
 }
 .Info .metadata .hashtags li{
-    padding-right: 5px;
+    padding-right: 10px;
     color: rgb(24, 76, 248);
     font-size: 14px;
-    font-weight: bold;
 }
 .Info .metadata .titleAndButton{
     display: flex;
 }
 .Info .metadata .titleAndButton .title{
-    margin-bottom: 5px;
     font-size: 15px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-
+    margin-right: 10px;
 }
 .Info .metadata .titleAndButton .morebtn{
-    width: 20px;
-    height: 20px;
+    height: 100%;
     background: none;
     border: none;
     cursor: pointer;
@@ -70,15 +67,14 @@ header{
 .titleAndButton .morebtn:hover{
     transform: rotate(180deg);
 }
-.metadata .views{
+.Info .views{
     font-size: 12px;
+    color: darkgray;
     font-weight: bold;
-    color: gray;
 }
 .actions{
     display: flex;
     justify-content: space-around;
-    padding: 0;
     margin: 15px 0px;
 }
 .actions li i{
@@ -203,5 +199,5 @@ header{
     .nextvideo{
         padding-top: 12px;
     }
-    
+
 }
