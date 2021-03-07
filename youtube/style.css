@@ -50,11 +50,13 @@ header{
 }
 .Info .metadata .titleAndButton .title{
     font-size: 15px;
+    margin-right: 10px;
+}
+.Info .metadata .titleAndButton .title.clamp{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    margin-right: 10px;
 }
 .Info .metadata .titleAndButton .morebtn{
     height: 100%;
@@ -62,7 +64,10 @@ header{
     border: none;
     cursor: pointer;
     outline: none;
-    transition: all 0.5s;
+    transition: transform 0.1s ease-in-out;
+}
+.Info .metadata .titleAndButton .morebtn.clicked{
+    transform: rotate(180deg);
 }
 
 .Info .views{
