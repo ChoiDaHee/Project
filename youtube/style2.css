@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    height: 50px;
+    padding: 8px 12px;
+    color: #fff;
+}
+header .logo i{
+    color: red;
+}
+header .logo a{
+    color: #fff;
+}
+header .icons i{
+    padding-left: 8px;
+}
+.video{
+    text-align: center;
+    background: #000;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
