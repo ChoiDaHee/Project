@@ -9,6 +9,12 @@ a{
 ul{
     list-style: none;
 }
+button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -41,7 +47,7 @@ header .icons i{
 .Info{
     padding: 8px 12px;
 }
-.Info .hashtag{
+.Info .metadata .hashtag{
     display: flex;
 }
 .Info .hashtag li{
@@ -50,6 +56,37 @@ header .icons i{
     font-size: 13px;
     margin-bottom: 8px;
 }
-.Info .title{
+.Info .metadata .titleAndButton{
     display: flex;
+}
+.Info .metadata .titleAndButton .title{
+    margin-right: 15px;
+    font-size: 15px;
+}
+.Info .metadata .titleAndButton button{
+    height: 100%;
+}
+.Info .views{
+    font-size: 13px;
+    color: gray;
+}
+.Info .actions{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0px;
+}
+.Info .actions li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Info .actions li i{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.Info .actions .action{
+    color: blue;
+}
+.Info .actions li span{
+    font-size: 13px;
 }
