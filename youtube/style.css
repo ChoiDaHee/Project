@@ -64,9 +64,7 @@ header{
     outline: none;
     transition: all 0.5s;
 }
-.titleAndButton .morebtn:hover{
-    transform: rotate(180deg);
-}
+
 .Info .views{
     font-size: 12px;
     color: darkgray;
