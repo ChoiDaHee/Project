@@ -124,3 +124,14 @@ header .icons i{
     text-transform: uppercase;
     color: red;
 }
+
+.nextvideo{
+    padding: 0px 12px;
+}
+.nextvideo > .title{
+    font-size: 14px;
+    color: gray;
+}
+.nextvideo .item{
+    display: flex;
+}
