@@ -145,13 +145,14 @@ header{
     display: inline-block;
     font-size: 13px;
     color: gray;
-    margin-bottom:12px;
 }
 .nextvideo .item{
     display: flex;
+    margin-top: 12px;
 }
 .nextvideo .item .img{
     flex: 1 1 35%;
+    margin-right: 12px;
 }
 .nextvideo .item .img img{
     width: 100%;
@@ -161,6 +162,10 @@ header{
 }
 .nextvideo .item .moreBtn{
     flex: 1 1 5%;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .nextvideo .info{
@@ -174,11 +179,14 @@ header{
 .nextvideo .item .info, .views{
     font-size: 12px;
 }
-
-/* @media screen and (min-width: 768px){
+.infoandnextvideo{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 768px){
     .infoandnextvideo{
         display: flex;
         flex-direction: row;
+        margin: 8px 0px;
     }
-
-} */
+}
