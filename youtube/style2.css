@@ -90,3 +90,37 @@ header .icons i{
 .Info .actions li span{
     font-size: 13px;
 }
+.Info .profile{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 8px 0px;
+}
+.Info .profile .metadata{
+    display: flex;
+    align-items: center;
+}
+.Info .profile .metadata img{
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+.Info .profile .metadata .info{
+    display: flex;
+    flex-direction: column;
+}
+.Info .profile .metadata .info .name{
+    font-size: 15px;
+    font-weight: bold;
+}
+.Info .profile .metadata .info .subscribers{
+    font-size: 13px;
+    color: gray;
+}
+.Info .profile .subscribe{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: red;
+}
