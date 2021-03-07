@@ -153,6 +153,13 @@ header{
 .nextvideo .item img{
     
 }
+.nextvideo .item .info{
+
+}
+.nextvideo .item .moreBtn{
+
+}
+
 .nextvideo .info{
     display: flex;
 }
