@@ -67,7 +67,7 @@ header .icons i{
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
-.Info .metadata .titleAndButton button{
+.Info .metadata .titleAndButton .morebtn{
     height: 100%;
 }
 .Info .views{
