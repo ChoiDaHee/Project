@@ -62,6 +62,8 @@ header .icons i{
 .Info .metadata .titleAndButton .title{
     margin-right: 15px;
     font-size: 15px;
+}
+.Info .metadata .titleAndButton .title.clamp{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
