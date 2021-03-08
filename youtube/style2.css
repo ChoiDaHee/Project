@@ -62,6 +62,10 @@ header .icons i{
 .Info .metadata .titleAndButton .title{
     margin-right: 15px;
     font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 .Info .metadata .titleAndButton button{
     height: 100%;
