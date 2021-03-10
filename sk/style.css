@@ -36,4 +36,28 @@ header .menu li a:hover{
 }
 header .iconsAndQuicklink{
     display: flex;
+    position: relative;
+}
+header .iconsAndQuicklink .searchbtn{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52px;
+    height: 54px;
+    background-image: url("img/searchBlack_btn.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.section2{
+    width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+.section2 h1{
+    display: inline-block;
+    text-transform: uppercase;
 }
