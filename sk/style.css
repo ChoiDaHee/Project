@@ -63,3 +63,16 @@ header .iconsAndQuicklink .searchbtn{
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+.section2 .cont{
+    display: flex;
+    justify-content: space-between;
+}
+.section2 .cont .cont1{
+    background-image: url("img/index_cont02.jpg");
+}
+.section2 .cont .cont2{
+    background-image: url("img/index_cont03.jpg");
+}
+.section2 .cont .cont3{
+    background-image: url("img/index_cont04.jpg");
+}
