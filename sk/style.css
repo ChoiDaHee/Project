@@ -50,29 +50,55 @@ header .iconsAndQuicklink .searchbtn{
     background-repeat: no-repeat;
 }
 
+.section1{
+    margin-bottom: 18px;
+}
 
 .section2{
     width: 1600px;
-    height: 600px;
+    height: 700px;
     margin: 0 auto;
     padding: 24px;
-    background-color: red;
 }
 .section2 h1{
     display: inline-block;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-left: 20px;
+}
+.section2 h1 .sk{
+    color: rgb(214, 22, 22);
+}
+.section2 h1 .high{
+    color: rgb(252, 115, 4);
 }
 .section2 .cont{
     display: flex;
     justify-content: space-between;
+    height: 600px;
+
 }
 .section2 .cont .cont1{
     background-image: url("img/index_cont02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.section2 .cont .cont_tit{
+    font-size: 30px;
+    color: #fff;
+   
 }
 .section2 .cont .cont2{
     background-image: url("img/index_cont03.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .section2 .cont .cont3{
     background-image: url("img/index_cont04.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
