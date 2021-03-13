@@ -55,7 +55,8 @@ header .iconsAndQuicklink .searchbtn{
     width: 1600px;
     height: 600px;
     margin: 0 auto;
-    /* background-color: red; */
+    padding: 24px;
+    background-color: red;
 }
 .section2 h1{
     display: inline-block;
