@@ -61,4 +61,5 @@ header .iconsAndQuicklink .searchbtn{
 .section2 h1{
     display: inline-block;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
