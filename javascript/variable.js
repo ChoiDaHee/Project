@@ -44,3 +44,11 @@ const nAn = 'not a number'/2;
 console.log(infinity);
 console.log(negativeInfinity);
 console.log(nAn);
+
+//string
+const char ='c';
+const brendan = 'brendan';
+const greeting = 'hello' + brendan;
+console.log(`value: ${greeting}, type: ${typeof greeting}`);
+const helloBob = `hi ${brendan}!`; 
+console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
