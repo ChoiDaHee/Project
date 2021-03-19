@@ -22,7 +22,7 @@ var age;
 
 // 3. constants (한번 할당하면 값이 젇대 바뀌지않음)
 // -security 보안상의 문제
-// -thread ssafety 
+// -thread safety 
 // -reduce human mistakes 
 
 const daysInWeek = 7;
