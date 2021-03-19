@@ -78,6 +78,10 @@ const gsymbol2 = Symbol.for('id');
 console.log(gsymbol1 === gsymbol2); //true
 console.log(`value: ${symbol1.description}, type: ${typeof Symbol1}`);
 
+//object
+// const dahee = { name: 'dahee', age = 20 };
+// dahee.age = 21;
+
 //5.Dynamic typing
 let text = 'hello';
 console.log(text.charAt(0)); //h
