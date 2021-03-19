@@ -13,11 +13,17 @@
 
 //var 
 //var hoisting
+//var 는 {} 무시하고 출력됨
 age = 4;
 var age;
 
 
+
+
 // 3. constants (한번 할당하면 값이 젇대 바뀌지않음)
+// -security 보안상의 문제
+// -thread ssafety 
+// -reduce human mistakes 
 
 const daysInWeek = 7;
 const maxNumber = 5;
