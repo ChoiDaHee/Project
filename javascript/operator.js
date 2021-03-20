@@ -21,3 +21,8 @@ const postIncrement = counter++;
 //postIncrement = counter;
 //counter = counter + 1;
 console.log(`postIncrement: ${postIncrement}, counter: ${counter}`);
+
+const preDecrement = --counter;
+console.log(`preDecrement: ${preDecrement}, counter: ${counter}`);
+const postDecrement = counter--;
+console.log(`postDecrement: ${postDecrement}, counter: ${counter}`);
