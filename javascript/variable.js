@@ -49,7 +49,7 @@ console.log(nAn);
 const char ='c';
 const brendan = 'brendan';
 const greeting = 'hello' + brendan;
-console.log(`value: ${greeting}, type: ${typeof greeting}`);
+console.log(`value: ${greeting  }, type: ${typeof greeting}`);
 const helloBob = `hi ${brendan}!`; 
 console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
 
