@@ -101,3 +101,10 @@ console.log(null === undefined); // false
 // 8. Conditional operators: if
 // if, else if, else
 const name = 'dahee';
+if (name === 'dahee') {
+    console.log('Welcome, Dahee!');
+}else if (name === 'coder') {
+    console.log('You are amazing coder');
+}else {
+    console.log('unkwnon');
+}
