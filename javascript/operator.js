@@ -14,6 +14,10 @@ console.log(2**3); //exponentiation
 // 3.Increment and decrement operators
 let counter = 2;
 const preIncrement = ++counter;
-console.log(counter);
-console.log(preIncrement);
-
+//counter = counter + 1;
+//preIncrement = counter;
+console.log(`preIncrement: ${preIncrement}, counter: ${counter}`);
+const postIncrement = counter++;
+//postIncrement = counter;
+//counter = counter + 1;
+console.log(`postIncrement: ${postIncrement}, counter: ${counter}`);
