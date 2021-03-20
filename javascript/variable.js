@@ -20,7 +20,7 @@ var age;
 
 
 
-// 3. constants (한번 할당하면 값이 젇대 바뀌지않음)
+// 3. constants (한번 할당하면 값이 젇대 바뀌지않음 ,r(read only))
 // -security 보안상의 문제
 // -thread safety 
 // -reduce human mistakes 
@@ -28,7 +28,7 @@ var age;
 const daysInWeek = 7;
 const maxNumber = 5;
 
-//4. Variable types
+//4. Variable types, rw(read/write)
 
 const count = 17; //integer
 const size = 17.1; // decimal number
