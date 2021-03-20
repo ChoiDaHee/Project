@@ -108,3 +108,9 @@ if (name === 'dahee') {
 }else {
     console.log('unkwnon');
 }
+
+// 9. Ternary operator: ?
+//condition ? value1 : value2;
+console.log(name === 'dahee' ? 'yes' : 'no');
+
+// 10. 
