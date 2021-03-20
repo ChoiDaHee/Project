@@ -42,3 +42,33 @@ console.log(10 < 6); // less than
 console.log(10 <= 6); // less than or equal
 console.log(10 > 6); // greater than
 console.log(10 >= 6); //greater than or equal
+
+// 6. Logical operators: || (or), &&(and), !(not)
+const value1 = true;
+const value2 = 4 < 2;
+
+// || (or), finds the first truthy value
+console.log(`or: ${value1 || value2 || check()}`);
+
+//&& (and), finds the first falsy value
+console.log(`and: ${value1 && value2 && check()}`);
+
+//often used to compress long if-statement
+//nullableObjext && nullableObject.something
+// if (nullableObject != null) {
+//     nullableObject.something;
+// }
+
+function check() {
+    for (let i = 0; i < 10; i++) {
+        //wasting time
+        console.log('ㅁ');
+    }
+    return true;
+}
+
+// ! (not)
+console.log(!value1);
+
+// 7. Equality
+
