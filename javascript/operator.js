@@ -86,17 +86,17 @@ console.log(stringFive !== numberFive);
 const dahee1 = { name: 'dahee' };
 const dahee2 = { name: 'dahee' };
 const dahee3 = dahee1;
-console.log(dahee1 == dahee2);
-console.log(dahee1 === dahee2);
-console.log(dahee1 === dahee1);
+console.log(dahee1 == dahee2); //false
+console.log(dahee1 === dahee2); //false
+console.log(dahee1 === dahee1); //true
 
 //equality - puzzler
 console.log(0 == false); //true
 console.log(0 === false); //false
-console.log('' == false); // true
-console.log('' === false); // false
-console.log(null == undefined); // true
-console.log(null === undefined); // false
+console.log('' == false); //true
+console.log('' === false); //false
+console.log(null == undefined); //true
+console.log(null === undefined); //false
 
 // 8. Conditional operators: if
 // if, else if, else
@@ -113,4 +113,14 @@ if (name === 'dahee') {
 //condition ? value1 : value2;
 console.log(name === 'dahee' ? 'yes' : 'no');
 
-// 10. 
+// 10. Switch statememt
+// use for multiple if checks
+// use for enum-like value check
+// use for multiple type checks in TS
+const browser = 'IE';
+switch (browser) {
+    case 'IE':
+     console.log('go away!');
+     break;
+
+}
