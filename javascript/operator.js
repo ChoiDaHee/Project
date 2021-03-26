@@ -120,7 +120,23 @@ console.log(name === 'dahee' ? 'yes' : 'no');
 const browser = 'IE';
 switch (browser) {
     case 'IE':
-     console.log('go away!');
-     break;
+        console.log('go away!');
+        break;
+    case 'Chrome':
+        console.log('love you!');
+        break;
+    case 'Firefox':
+        console.log('love you!'); //동일한 문구면 case 연달아 쓰면됨        break;
+    default:
+        console.log('same all!');
+        break;
+}
 
+// 11. Loops
+// while loop, while the condition is truthy,
+// body code is executed,
+let i = 3;
+while (i > 0) {
+    console.log(`while: ${i}`);
+    i--;
 }
