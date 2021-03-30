@@ -49,5 +49,49 @@ function printAll(...args) {
     for (let i = 0; i < args.length; i++) {
         console.log(args[i]);
     }
+
+    for (const arg of args) {
+        console.log(arg);
+    }
+    
+    args.forEach((arg) => console.log(arg));
 }
 printAll('dream', 'coding', 'ellie');
+
+// 5. Local scope
+let globalMessage = 'global' //global variable
+function printMessage() {
+    let message = 'hello';
+    console.log(message); //local variavle
+    console.log(globalMessage);
+    function printAnother() {
+        console.log(message);
+        let childMessage = 'hello';
+    }
+    // console.log(childMessage); //error
+    // return undefined; (생략 가능)
+}
+printMessage();
+
+// 6. Return a value
+function sum(a, b) {
+    return a+b;
+}
+const result = sum(1, 2); //3
+console.log(`sum: ${sum(1,2)}`);
+
+// 7. Ealry return, early exit
+// bad
+function upgradeuser(user) {
+    if (user.point > 10) {
+        // long upgrade logic...
+    }
+}
+
+// good
+function upgaradeUser(user) {
+    if (user.point <= 10) {
+        return;
+    }
+    // long upgrade logic...
+}
