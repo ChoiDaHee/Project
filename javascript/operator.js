@@ -174,6 +174,11 @@ for (let i = 0; i < 11; i++) {
 }
 
 // Q2. iterate from 0 to 10 and print numbers until reaching 8 (use break)
-
+for (let i = 0; i < 11; i++) {
+    if (i > 8) {
+        break;
+    }
+    console.log(`q2. ${i}`);
+}
 
 
