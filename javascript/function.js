@@ -123,12 +123,22 @@ function randomQuiz(answer, printYes, printNo) {
         printNo();
     }
 }
+// anonymous function
 const printYes = function () {
     console.log('yes!');
 };
 
-const printNo = function () {
+// named function
+// better debugging in debugger's stack traces
+// recursions
+const printNo = function print() {
     console.log('no!');
 };
 randomQuiz('wrong', printYes, printNo);
 randomQuiz('love you', printYes, printNo);
+
+// Arrow function
+// always anonymous
+const simplePrint = function () {
+    console.log('simplePrint');
+};
