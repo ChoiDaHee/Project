@@ -159,3 +159,7 @@ const simpleMultiply = (a, b) => {
 // function calculate(command, a, b)
 // command: add, substract, divide, multiply, remainder
 
+function calculateAdd(a, b) {
+    console.log('a+b');
+}
+calculateAdd();
