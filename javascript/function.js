@@ -139,6 +139,23 @@ randomQuiz('love you', printYes, printNo);
 
 // Arrow function
 // always anonymous
-const simplePrint = function () {
-    console.log('simplePrint');
+// const simplePrint = function () {
+//     console.log('simplePrint');
+// };
+
+const simplePrint = () => console.log('simplePrint');
+const add = (a, b) => a+b;
+const simpleMultiply = (a, b) => {
+    // do something more
+    return a * b;
 };
+
+// IIFE: Immediately Invoked Function Expression
+(function hello() {
+    console.log('IIFE');
+})();
+
+// Fun quiz time
+// function calculate(command, a, b)
+// command: add, substract, divide, multiply, remainder
+
