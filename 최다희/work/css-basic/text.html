@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Text</title>
+	<style>
+		body{
+			color: #333;
+			/*text-align: center;*/
+			/* color, text-align 모두 상속 되는 속성 */
+			/* left, right, center, justify */
+			/* block요소에만 사용 가넝 */
+		}
+		h1, p, span{
+			background: skyblue;
+		}
+		h1{
+			text-align: center;
+			color: darkgreen;
+		}
+		p{
+			color: rgb(255, 105, 95);
+
+		}
+		.p1{
+			text-align: justify;
+			text-transform: capitalize;
+			/* uppercase, lowercase, capitalize */
+			/* 대문자, 소문자, 단어의 첫번째글자를 대문자로 바꿈 */
+			text-indent: 100px;
+			/* 들여쓰기 */
+			letter-spacing: 3px;
+			line-height: 130%;
+			/* 160%. 1.6 */
+			word-spacing: 10px;
+		}
+		.p3{
+			height: 100px;
+			vertical-align: middle;
+			/* top, middle, bottom => td / img */
+		}
+		span{
+			text-align: center;
+			/* 인라인 요소 자체에 text-align적용 불가 */
+			text-decoration: line-through;
+			text-indent: 100px;
+			/* 인라인 요소 자체에 text-indent적용 불가 */
+			letter-spacing: -0.08em;
+			line-height: 1.8;
+			word-spacing: -5px;
+		}
+		.p2{
+			direction: rtl;
+			unicode-bidi: bidi-override;
+		}
+		img{
+			vertical-align: middle;
+		}
+		a{
+			text-decoration: none;
+			/* none, overline, line-through, underline*/
+
+		}
+		div{
+			width: 100px;
+			background: pink;
+			white-space: nowrap;
+			/* nowrap, pre, pre-wrap, pre-line */
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		h3{
+			color: red;
+			text-shadow: 2px 2px 5px blue;
+		}
+	</style>
+</head>
+<body>
+	<!-- 자간, 컬러, 정렬, 밑줄, 대소문자, 그림자 -->
+	<h1>제목 요소 1 입니다</h1>
+	<p class="p1">lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati est debitis earum impedit recusandae, illum adipisci repellat tempore amet nemo doloremque labore modi molestias voluptatum laborum, unde accusamus quia corrupti?</p>
+	<p class="p3">다른 문단입니다</p>
+	<span>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eos voluptatibus? Qui voluptatibus quod necessitatibus impedit quos nulla officia, nisi sapiente unde non temporibus voluptas quibusdam at itaque et iste?</span>
+	<p>default text direction</p>
+	<p class="p2">right-to-left text direction</p>
+	<p>hey!! <img src="../image/logo_titleBar.png" alt="버거킹로고">burgerking logo oh~~~</p>
+	<a href="#">링크역할을 해 봅니다</a>
+	<div>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Fuga corrupti veritatis, distinctio ea corporis mollitia? Quaerat fugit aliquam modi qui illo reiciendis reprehenderit neque ad, repellendus suscipit soluta, maiores quidem.</div>
+	<h3>text-shadow effect!!</h3>
+</body>
+</html>

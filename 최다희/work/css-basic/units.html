@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Units</title>
+	<style>
+		/* font-size 상속이 가능 한 속성 */
+		/*body{
+			font-size: 12px;
+
+		}*/
+		div{
+			font-size: 10px;
+		}
+		.p1{
+			font-size: 12px;
+			/* 고정적인 폰트 사이즈 */
+		}
+		.p2{
+			font-size: 1em;
+			/* 부모요소의 폰트사이즈가 1em입니다 */
+		}
+		.p3{
+			font-size: 100%;
+		}
+		.p4{
+			font-size: 1rem;
+			/* rootem 최상위 html의 기본 폰트 크기 16px을 지정 */
+			/* html{ font-size: 100%; } */
+			/* html{ font-size: 62.5%; } */
+			/* html 폰트단위를 px로 설정하지 않기 
+			   (브라우저는 자체 설정에서 폰트를 키울 수 있다) */
+		}
+		.p5{
+			font-size: 10vw;
+			/* viewport width(보여지는 영역의 가로값) / 
+				1vw = 뷰포트 너비의 1%
+				480px 너비의 뷰포트일 때, 1vw = 4.8%
+				vw, vh는 ie9부터 지원
+				calc(100vw - 50px)
+			*/
+		}
+	</style>
+</head>
+<body>
+	<h1>폰트 단위 구별</h1>
+	<div class="f1">
+		<h2>단위 px</h2>
+		<p>나는 기본 글꼴 이지롱</p>
+		<p class="p1">나는 12px입니다</p>
+	</div>
+	<div class="f2">
+		<h2>단위 em</h2>
+		<p>나는 기본 글꼴 이지롱</p>
+		<p class="p2">나는 1em입니다</p>
+	</div>
+	<div class="f3">
+		<h2>단위 %</h2>
+		<p>나는 기본 글꼴 이지롱</p>
+		<p class="p3">나는 100%입니다</p>
+	</div>
+	<div class="f4">
+		<h2>단위 rem</h2>
+		<p>나는 기본 글꼴 이지롱</p>
+		<p class="p4">나는 1rem입니다</p>
+	</div>
+	<div class="f5">
+		<h2>단위 vw</h2>
+		<p>나는 기본 글꼴 이지롱</p>
+		<p class="p5">나는 100vw입니다</p>
+	</div>
+</html>

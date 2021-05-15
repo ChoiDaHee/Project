@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- 익스플로러가 버전이 낮으면 최상위 버전으로 실행하라는 명령어 -->
+	<title>HTML Quotation and Citation Elements</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="/front/pc/img/favicon.ico"> <!-- 모바일에서 홈화면에 추가되었을때 아이콘 -->
+
+	<style>
+		img{
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<blockquote>HTML은 하이퍼텍스트 마크업 언어(HyperText Markup Langauge)라는 의미의 웹 페이지를 위한 마크업 언어이다.
+	HTML과 css표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 css의 사용을 권장한다..</blockquote>
+	<!-- 다른 출처로부터 인용된 문단을 정의할 때 사용하도록 변경 -->
+	<p>통계 사이트인 statcounter에 따르면, 
+	  <q>2021년 4월 현재 가장 높은 점유율을 보이는 웹 브라우저는 크롬 브라우저</q>라고 합니다.</p>
+	  <!-- 짧은 인용문구를 정의할 때 사용, p태그와 같이 사용하기 좋음 -->
+	 <p><abbr title="World Wide Web Consortium">W3C</abbr>는 월드 와이드 웹을 위한 표준을 개발하고 장려하는 조직으로 팀 버너스 리를 중심으로 1994년 10월에 설립되었다.</p>
+	 <!-- 단어의 축약형(abbrevuation)이나 머리글자로만 된 단어를 정의할 때 사용 -->
+	 <footer>
+	 	<address>
+	 		서울시 종로구 인사동 대일빌딩 &middot;<br>
+	 		02)978-7878
+	 	</address>
+	 	<!-- 연락처정보를 정의, 이메일주소, url, 실제주소, 전화번호, 소셜 -->
+	 	&copy;cooyright
+	 	<!-- Entity Code : HTML 문서에서 특수문자를 입력하기 위해 사용하는 코드-->
+	 </footer>
+
+	 <img src="https://guri.hyumc.com/upload/ckfinder/images/blog/2016/11/20161101_070036-804x1024.jpg" alt="뭉크의 절규">
+	 <p><cite>절규</cite>에드바르트 뭉크, 1893년</p>
+	 <!-- 창의적인 작품(명화, 책, 시, 노래, 영화, 조각 등) 제목을 정의 / 사람의 이름은 저작물의 제목이 아님 -->
+
+	 <p>이 문단은 왼쪽에서부터 오른쪽 방향으로 써진다.</p>
+	 <bdo dir="rtl">이 문단은 오른쪽에서 왼쪽 방향으로 써질 것이다.</bdo>
+	 <!-- rtl, ltr 자식요소의 텍스트 방향성을 정의할 때 사용-->
+</body>
+</html>

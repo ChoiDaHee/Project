@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Max-width / min-width</title>
+	<style>
+		div{
+			margin: 20px 0;
+			border: 4px solid darkgreen;
+		}
+		.w{
+			width: 500px;
+		}
+		.max{
+			max-width: 500px;
+			/*지정한 수치 이상 늘어나지 말아라*/
+		}
+		.min{
+			/*width: 100%;
+			padding: 0 12px;*/
+			width: 96%;
+			margin: 0 auto;
+			min-width: 800px;
+			/*지정한 수치 이하로 줄어들지 말아라 */
+		}
+		/* max-width, min-width는 width값과 같이 코드를 적용 / 이런경우 거의 대부분
+		width값이 %인 경우가 많다. */
+	</style>
+</head>
+<body>
+	<!-- <div class="w">width: 500px</div>
+	<div class="max">max-width: 500px</div> -->
+	<div class="min">min-width: 500px</div>
+</body>
+</html>

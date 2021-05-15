@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Maps</title>
+	<style>
+		body{
+			background: #eb535e;
+		}
+	</style>
+</head>
+<body>
+	<img src="../bg_home_guide_app.png" alt="버거킹앱" usemap="#kingmap">
+
+	<map name="kingmap">
+	   <area shape="reat" coords="455,144,603,294" href="https://www.burgerking.co.kr/#/menu/K100001/%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84" alt="버거킹신제품">
+	   <!-- 시작 좌표와 끝나는 좌표 -->
+
+	   <area shape="circle" coords="166,295,16" href="https://www.burgerking.co.kr/#/appGuide" alt="버거킹앱">
+	   <!-- 원의 중심점과 반지름 -->
+
+	   <img src="../bg_home_guide_delivery.png" alt="딜리버리앱" usemap="#appmap">
+
+	   <map name="appmap">
+	   	<area shape="poly" coords="308,165,462,156,594,331,596,402,310,401" href="https://www.burgerking.co.kr/#/login" alt="딜리버리앱">
+	   </map>
+	</map>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@font-face{
+	font-family: SpoqaHanSans;
+	src: url(../font/SpoqaHanSans-Regular.woff2) format('woff2');
+}
+
+body{
+	font-family: "SpoqaHanSans", Dotum, "돋움체", sans-serif;
+}

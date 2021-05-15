@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audi Q4</title>
+	<style>
+		body{
+			font-family: AudiType, sans-serif;
+			color: #111;
+		}
+		@font-face{
+			font-family: AudiType;
+			src: url('../font/AudiTypeVF.woff2') format('woff2');
+		}
+		.clearfix::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		body, section, div, h2, p{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+			color: #111;
+		}
+		section{
+			width: 100%;
+			min-width: 1200px;
+			/*background-color: yellow;*/
+			/*padding: 100px 0 100px 11.875%;*/
+			padding: 100px 0;
+		}
+		.audi-q4-in, .audi-gt{
+			/*background-color: lightpink;*/
+			/*padding-left: 11.875%;*/
+		}
+		section > div{
+			width: 85%;
+			/*background-color: skyblue;*/
+			margin: 0 auto;
+		}
+		img{
+			vertical-align: bottom;
+			/*float: left;*/
+			width: 50%;
+		}
+		.audi-q4-in > img{
+			float: left;
+		}
+		.audi-q4-txt{
+			/*background-color: skyblue;*/
+			float: left;
+			margin-top: 20%;
+			padding-left: 66px;
+			/*padding-right: 30px;*/
+			width: calc(50% - 80px);
+			/* box-sizing: border-box; */
+			/* padding이랑 border를 width값 안에 포함시키는 css */
+		}
+		h2{
+			font-size: 42px;
+		}
+		p{
+			margin: 40px 0px;
+		}
+		a{
+			display: block;
+			width: 240px;
+			height: 56px;
+			border: 1px solid #111;
+			text-align: center;
+			line-height: 56px;
+			/*padding-top을 줘서 아래로 내릴경우엔 높이값을 padding-top만큼 빼서 적용하던가,,
+			box-sizing: border-box를 지정!*/
+		}
+
+		section + section{
+			padding-top: 0;
+		}
+		.audi-gt-txt{
+		 	/*width: 50%;
+			box-sizing: border-box;*/
+			float: left;
+			margin-top: 18%;
+			padding-right: : 66px;
+		}
+		.audi-gt > img{
+			float: right;
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<section>
+		<div class="audi-q4-in clearfix">
+			<img src="../../image/q4.webp" alt="Audi q4">
+			<div class="audi-q4-txt">
+				<h2>The new Audi Q4 Sportback e-tron</h1>
+				<p>진보를 통해 완성되다</p>
+				<a href="#">자세히 보기</a>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="audi-gt clearfix">
+			<div class="audi-gt-txt">
+				<h2>The new Audi e-tron GT</h2>
+				<p>미래, 아이디어로부터 시작되다</p>
+				<a href="#">자세히 보기</a>
+			</div>
+			<img src="../../image/Audi_Angola.jpg" alt="Audi_Angola">
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>css overflow</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			margin: 20px;
+			padding: 4px;
+			background-color: gray;
+			color: #333;
+			font-size: 12px;
+		}
+		.d1{
+			color: yellow;
+			overflow-x: auto;
+			/*컨텐츠가 적으면 스크롤이 안생기고 많으면 생김*/
+		}
+		.d2{
+			color: skyblue;
+			white-space: nowrap;
+		 	overflow-x: scroll;
+		 	
+		}
+		.d3{
+			color: orange;
+			overflow-y: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vel vero ab consequuntur. Debitis, nisi? Aliquam molestias quibusdam, omnis vitae, ea quasi fugit, soluta magnam corrupti exercitationem tempore laudantium quidem.</div>
+	<div class="d2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio asperiores nam iure nesciunt commodi. Modi iusto adipisci distinctio ipsa consequatur quos veritatis culpa corrupti animi, nostrum soluta minima dolorum ipsam?</div>
+	<div class="d3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum odit exercitationem veniam quidem odio numquam inventore, minima similique in deleniti eius quibusdam aliquam impedit consectetur amet molestias. Ea, quasi.</div>
+	<div class="d4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quisquam facere dolorem sequi tempora! Ut accusamus non pariatur. Dolorum et possimus sequi ut quasi totam doloremque accusamus facilis ad architecto!</div>
+</body>
+</html>

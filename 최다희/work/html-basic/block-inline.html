@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Block element / HTML inline element</title>
+	<style>
+		h1, h2, p, form, ul{
+			background: yellow;
+		}
+		div{
+			width: 100px;
+			background: skyblue;
+		}
+		li{
+			background: darkgreen;
+		}
+		span, a{
+			background: lightgray;
+		}
+	</style>
+</head>
+<body>
+	<h1>블록요소와 인라인요소</h1>
+	<h2>block요소</h2>
+	<p>HTML의 모든요소는 해당요소가 웹브라우저에 어떻게 보이는가를 결정짓는 display 속성을 가진다. <br> 두가지 값 중 하나이다</p>
+	<p>가장 대표적인 블록요소는 <strong>p, div, h1~h6, ul, ol, form</strong></p>
+	<div>
+		<h3>특징</h3>
+		<p>자체 내용(content)이 짧아도 블록요소는 브라우저 해상도 만큼 너비를 가진다.</p>
+		<p>줄바꿈이 된다. 자체적으로 위아래 좌우 여백을 가진다</p>
+		<p>css로 위아래, 좌우여백, 가로, 세로 지정 가능</p>
+		<p>블록요소는 인라인요소를 포함 할 수 있다</p>
+		<p>블록요소도 블록요소를 포함 할 수 없다</p>
+		<p>div요소 - 블록요소를 포함할 수 있는 그룹 / 시멘틱요소들 </p>
+		<p>ul > li, ol > li, dl > dt + dd</p>
+		<p>li요소는 블록요소를 포함 할 수 있다</p>
+	</div>
+	<ul>
+		<li><a href="#">메인메뉴2</a></li>
+		<li><a href="#">메인메뉴3</a></li>
+	</ul>
+	<h2>inline요소</h2>
+	<p>display속성값이 인라인요소는 한줄로 쭉 나타나는 속성이 있다. 요소의 너비도 html요소의 내용(content)만큼만 차지한다.</p>
+	<p>가장 대표적인 인라인요소는 span, a</p>
+	<p>css로 가로, 세로 지정 불가, 위아래좌우여백이 블록요소랑은 다르게 들어감</p>
+	<p>인라인요소는 블록요소를 포함할 수 없습니다 / 인라인요소안에 인라인요소도 넣을 수 없다</p>
+	<p>a요소 - 블록요소와 인라인요소를 모두 포함가능 -> css로 display속성을 변경</p>
+	<p>span요소 - 인라인요소를 포함할 수 있는 그룹</p>
+</body>
+</html>

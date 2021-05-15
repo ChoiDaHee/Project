@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>selector</title>
+	<style>
+		#wrap{
+			background-color: pink;
+			width: 600px;
+		}
+		.color{
+			background-color: red;
+		}
+		div{
+			background-color: green !important;
+		}
+		/*element 1점, class 10점, id 100점
+		같은 요소에 같은 속성을 준다고 가정하면 가장 아래 속성을 값으로 나타냄, 그러나 각 selector 상태에 따라 바뀔 수 있다*/
+		.w{
+			width: 300px !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap" class="color w">
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima beatae laboriosam aperiam corrupti sit adipisci iure blanditiis. Quibusdam corrupti modi velit, inventore qui iusto eum eaque culpa, dignissimos perspiciatis, ipsam.
+	</div>
+	<!-- 
+		1. simple selector (select element, id, class)
+		2. combinator selector (특정 관계에 따른 선택 - 가족관계도)
+		3. pseudo-class (가상클래스요소 - a:link, a:hover, a:visited, a:active, :first-child, :nth-child, :last-child, :first-of-type, :checked, :disabled, :empty, :enabled, :focus, :hover, :not(selector), :only-child, :only-of-type)
+		4. pseudo-element (가상요소 - ::before, ::after, ::first-letter, ::first-line, ::marker, ::selection)
+		5. attribute selector (속성 - a[target], a[target="_blank"], [title~="first"] - 띄어쓰기 기준으로 단어인식, [title|="first"] - 하이픈으로 시작하는 요소선택 first, first-a, [title^="속성값"] - first로 시작되는 요소는 모두 선택,
+		[title$="first"] - first로 끝나는 요소, [title*="first"] - first라는 요소가 포함되면 선택)
+	-->
+</body>
+</html>

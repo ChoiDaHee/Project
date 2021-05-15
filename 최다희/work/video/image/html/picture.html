@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Picture Element</title>
+	<style>
+		body{
+			background: #eb535e;
+		}
+	</style>
+</head>
+<body>
+	<picture>
+		<source media="(min-width: 1024px)" srcset="../ico_nodata01_type02.png">
+			<!-- 1024px ~  -->
+		<source media="(min-width: 700px)" srcset="../logo_titleBar_de.png">
+			<!-- 700px ~ 1023px -->
+		<img src="../logo_titleBar.png" alt="burgerking">
+			<!-- 0 ~ 699px -->
+	</picture>
+	<!-- ie 에서는 지원하지 않음 -->
+
+</body>
+</html>

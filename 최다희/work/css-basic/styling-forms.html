@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Styling Forms</title>
+	<style>
+		input[type=text] {
+			width: 150px;
+			margin-bottom: 12px;
+			padding: 12px;
+			background-color: yellow;
+			border: none;
+			color: #ff00ff;
+		}
+		input::placeholder{
+			color: green;
+		}
+		input[type=button] {
+			width: 120px;
+			margin-left: 35px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		이름 : <input type="text" name="name" placeholder="neme"><br>
+		비밀번호 : <input type="password" name="pw" value="pw">
+		<input type="button" value="Example Button">
+	</form>
+</body>
+</html>

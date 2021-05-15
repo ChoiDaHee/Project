@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>table css</title>
+	<style>
+		table, th, td{
+			/*border: 1px solid red;*/
+			/*border-left: 10px solid red;*/
+			/*border-style: solid;*/
+			/*solid, dashed, dotted, double, groove, ridge, inset, outset, none, hidden*/
+			/*border-left-style: double;
+			border-right-style: groove;
+			border-bottom-style: ridge;
+			border-top-style: outset;*/
+			/*border-width: 5px;*/
+			/*border-width: 25px 4px 10px 35px;*/
+			/*medium, thick*/
+			/*border-color: hsl(0, 100%, 50%);*/
+			/*border-color: red;*/
+			/*border: 1px solid #000;*/
+		}
+		table{
+			width: 80%;
+			margin: 0 auto;
+			border-collapse: collapse;
+		}
+		/* dispaly - inline, block, inline-block, none, table */
+		caption{
+			caption-side: bottom;
+			overflow: hidden;
+			display: inline-block;
+			position: absolute;
+			z-index: -1;
+			border: 0;
+			width: 1px;
+			height: 1px;
+			clip: rect(1px, 1px, 1px, 1px);
+			clip-path: inset(50%);
+		}
+		tr:hover{
+			background-color: #f5f5f5;
+		}
+		tr:nth-child(odd){
+			background-color: #f2f2f2;
+		}
+		th, td{
+			border-bottom: 1px solid #ddd;
+		}
+		th{
+			height: auto;
+			padding: 12px;
+			text-align: left;
+			background-color: #4caf50;
+			color: #fff;
+		}
+
+		td{
+			/*height: 50px;*/
+			/*text-align: center;*/
+			padding: 12px;
+			/*vertical-align: bottom;*/
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>table title</caption>
+		<colgroup>
+			<col>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">First name</th>
+				<th scope="col">Lastname</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>peter</td>
+				<td>Griffin</td>
+			</tr>
+			<tr>
+				<td>Lois</td>
+				<td>Griffin</td>
+			</tr>
+			<tr>
+				<td>Lois</td>
+				<td>Griffin</td>
+			</tr>
+			<tr>
+				<td>Lois</td>
+				<td>Griffin</td>
+			</tr>
+		</thead>
+	</table>
+	<span>인라인요소</span>
+</body>
+</html>

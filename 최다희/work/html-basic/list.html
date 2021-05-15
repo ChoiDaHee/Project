@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Lists - 목록요소</title>
+</head>
+<style>
+	
+</style>
+<body>
+	<!-- ol, ul, dl -->
+	<p>순차적 목록입니다. - Ordered HTML List</p>
+	<!-- 
+	<ol type="i">
+		<li><p>-</p></li>
+		<li><strong>-</strong></li>
+	</ol>
+	-->
+
+	<ol start="50">
+		<li>1번</li>
+		<li>2번</li>
+		<li>3번</li>
+		<li>4번</li>
+		<li>5번</li>
+	</ol>
+	<!-- ol type / i, I, a, A, 1(default)  -->
+	<!-- list-style-type -->
+
+	<p>정의형 목록 요소 입니다. - Description Lists</p>
+	<!-- 
+	<dl>
+		<dt></dt> <- 이름(용어)를 정의한다
+		<dd></dd> <- dt를 설명한다
+		<dt></dt>
+		<dd></dd>
+	</dl> 
+	<dl>
+		<dt></dt>
+		<dd></dd>
+		<dd></dd>
+		<dd></dd>
+	</dl> 
+    -->
+	<dl>
+		<dt>Coffee</dt>
+		<dd>- black hot drink</dd>
+		<dt>Milk</dt>
+		<dd>- white cold drink</dd>
+	</dl>
+
+	<p>비순차목록 요소 입니다. - unordered(bulleted) list</p>
+	<ul>
+		<li>coffee</li>
+		<li>tea</li>
+		<li>milk</li>
+	</ul>
+	<!-- 실제로 가장 많이 쓰는 요소, 네비게이션 제작시 99.99프로 사용 -->
+
+	<!-- https://softeer.ai/index.do - nav -->
+	<ul>
+		<li>
+			<a href="#">Challenge</a>
+			<ul>
+				<li>
+					<a href="#">
+						<strong>Practice</strong>
+						<strong>연습문제</strong>
+					</a>
+				</li>
+				<li><a href="#">Certification</a></li>
+				<li><a href="#">HMG Coding Test</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Connect</a>
+			<ul>
+				<li><a href="#">softeer Blog</a></li>
+				<li><a href="#">softeer Event</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Careers</a>
+			<ul>
+				<li><a href="#">Jop Openings</a></li>
+				<li><a href="#">Edv In HMG</a></li>
+				<li><a href="#">Talent Pool</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Class</a>
+			<ul>
+				<il>
+					<li><a href="#">Algo Tour</a></li>
+					<li><a href="#">Softeer Academy</a></li>
+				</il>
+			</ul>
+		</li>
+	</ul>
+
+	<!-- https://service.skmagic.com/web/main/main.do sk매직서비스 센터 -->
+	<ul>
+		<li>
+			<a href="https://www.google.com">쉬운해결</a>
+			<ul>
+				<li><a href="https://www.google.com">많이하는 질문</a></li>
+				<li><a href="#">동영상 가이드</a></li>
+				<li><a href="#">자가점검</a></li>
+				<li><a href="#">카드뉴스</a></li>
+				<li><a href="#">제품 사용 설명서</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">상담예약</a>
+			<ul>
+				<li><a href="#">온라인상담</a></li>
+				<li><a href="#">상담 예약</a></li>
+				<li><a href="#">채팅상담</a></li>
+				<li><a href="#">상담 예약 조회/변경</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">방문예약</a>
+			<ul>
+				<li><a href="#">A/S방문예약</a></li>
+				<li><a href="#">철거//설치예약</a></li>
+				<li><a href="#">이용 요금안내</a></li>
+				<li><a href="#">서비스 예약 조회/변경</a></li>
+				<li><a href="#">서비스 센터 찾기</a></li>
+				<li><a href="#">안심 ok 일정관리</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">정보변경</a>
+			<ul>
+				<li><a href="#">회원정보 수정</a></li>
+				<li><a href="#">결제정보 변경</a></li>
+				<li><a href="#">납입내역 조회</a></li>
+				<li><a href="#">명의 변경</a></li>
+				<li><a href="#">미납금 납부</a></li>
+				<li><a href="#">필요서류 다운로드</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">부품 구매</a>
+			<ul>
+				<li><a href="#">부품 구매</a></li>
+				<li><a href="#">부품 문의</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">고객의소리</a>
+			<ul>
+				<li><a href="#">칭찬합니다</a></li>
+				<li><a href="#">개선해주세요</a></li>
+				<li><a href="#">공지사항</a></li>
+				<li><a href="#">이벤트</a></li>
+				<li><a href="#">나의 글 보기</a></li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

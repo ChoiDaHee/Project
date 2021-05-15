@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Position</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.d1{
+			background: darkgreen;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-top: -100px;
+			margin-left: -100px;
+			z-index: 60;
+		}
+		.d2{
+			background: lightpink;
+			
+		}
+		.s1{
+			width: 80%;
+			height: 1200px;
+			background: skyblue;
+			position: relative;
+		}
+		p{
+			width: 80px;
+			height: 30px;
+			background-color: yellow;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		span{
+			position: relative;
+			z-index: 30;
+		}
+		aside{
+			width: 100px;
+			height: 200px;
+			background-color: gray;
+			position: fixed;
+			z-index: 99;
+			top: 50px;
+			right: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="d1">box1</div>
+	<div class="d2">box2</div>
+	<!-- relative, absolute, static(default), fixed -->
+	<!-- relative는 본인의 원래 위치 기준으로 left, right, top, bottom이 가능 -->
+	<!-- absolute는 요소에 적용하는 순간 레이어형태로 위로 뜹니다. 부모요소에 relative가 있는 경우 부모요소기준으로 위차값을 잡고, relative가 없는 경우 부모를 찾아헤매다 브라우저기준으로 위치값을 잡는다. -->
+	<section class="s1">
+		<p>absolute</p>
+		<span style="background-color: red">위치값</span>
+	</section>
+	<aside>배너</aside>
+	<footer>
+		footer
+	</footer>
+</body>
+</html>

@@ -1,0 +1,237 @@
+#container{
+	width: 100%;
+	color: #1c1c1c;
+	padding: 100px 0;
+}
+section {
+	width: 100%;
+	padding: 0 5%;
+	box-sizing: border-box;
+}
+.intro-box{
+	padding-bottom: 120px;
+}
+.intro-box > div{
+	float: left;
+	width: 50%;
+}
+.intro-box h2{
+	/*min-width: 580px;*/
+	max-width: 980px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #a9c638;
+	letter-spacing: 0.28em;
+	background: url(../img/logo-w.png) no-repeat 10px bottom / /*50%*/ 360px auto;
+	/*padding-bottom: 12%;*/
+	padding-bottom: 100px;
+}
+.intro-box p{
+	margin-top: 2em;
+	line-height: 1.4;
+}
+.intro-box > figure {
+	width: 40%;
+	float: right;
+	position: relative;
+
+}
+.intro-box > figure::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #a9c638;
+	position: absolute;
+	left: -8%;
+	top: 8%;
+}
+.intro-box img{
+	width: 100%;
+	position: relative;
+	/*before 라서 포지션, after였으면 z-index*/
+}
+
+.room-box{
+	background-color: #333;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.room-box h2{
+	font-size: 52px;
+	text-align: center;
+}
+.room-box li > span{
+	font-size: 13px;
+	color: #a9c638;
+}
+.room-box > ul{
+	text-align: center;
+	position: relative;
+	padding-bottom: 42%;
+}
+.room-box ul::before{
+	content: "";
+	display: block;
+	width: 90%;
+	height: 90%;
+	border: 1px solid #a9c638;
+	position: absolute;
+	left: 5%;
+	bottom: -10%;
+}
+.room-box li{
+	display: inline-block;
+	padding: 40px 12px;
+}
+.room-box li > span {
+	cursor: pointer;
+}
+.room-box .active > span{
+	font-weight: bold;
+}
+.room-box li:hover > span{
+	font-weight: bold;
+}
+.room-box .room-wrap{
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0; /*부모요소(ul)의 높이값*/
+	background-color: #fff;
+}
+.room-box .active .room-wrap{
+	display: block;
+}
+.room-box li:hover >.room-wrap{
+	display: block;
+}
+
+/*.room-box li > span:hover + .room-wrap{
+	display: block;
+	
+}*/
+/*.room-box li:hover > .room-wrap{
+	display: block;
+	cursor: pointer;
+}*/
+/*아래 방식대로 해야 이미지가 계속 보임*/
+.room-box .room-wrap > div{
+	/*position: relative;*/
+	/*z-index: 10;*/
+}
+.room-box img{
+	width: 55%;
+	float: left;
+}
+.room-box .txt-box{
+	width: 45%;
+	background-color: #fff;
+	text-align: left;
+	float: right;
+	padding: 5%;
+	box-sizing: border-box;
+}
+.room-box h3{
+	font-size: 36px;
+}
+.room-box p{
+	font-size: 13px;
+	margin: 1em 0 2em;
+	line-height: 1.4em;
+}
+.room-box a{
+	font-size: 12px;
+	color: #fff;
+	display: inline-block;
+	padding: 1.0em 2.2em;
+	letter-spacing: 0.2em;
+}
+.room-box .btn-de{
+	background-color: #858585;
+}
+.room-box .btn-bn{
+	background-color: #a9c638;
+}
+
+/* fa-box */
+.fa-box{
+
+}
+.fa-box h2{
+	font-size: 52px;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+.fa-box ul li span{
+	font-size: 13px;
+	color: #A9C638;
+	cursor: pointer;
+}
+.fa-box ul {
+	text-align: center;
+	position: relative;
+	padding-bottom: 40%;
+}
+.fa-box ul li {
+	display: inline-block;
+	padding: 12px;
+}
+.fa-box .txt-box h3{
+	font-size: 52px;
+	color: #1c1c1c;
+}
+.fa-box .txt-box p{
+	font-size: 16px;
+	color: #858585;
+	margin: 1em 0 2em;
+}
+.fa-box .txt-box a{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	color: #A9C638;
+	border: 1px solid #A9C638;
+	padding: 0.8em 2.5em;
+}
+
+.fa-box .fa-wrap{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	background-color: #fff;
+	margin-top: 20px;
+}
+.fa-box li:hover > .fa-wrap {
+	display: block;
+}
+.fa-wrap img{
+	width: 50%;
+	float: left;
+}
+.fa-list02 img{
+
+}
+.fa-wrap .txt-box{
+	width: 50%;
+	float: right;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: left;
+	padding: 5%;
+	box-sizing: border-box;
+}
+.fa-box .active .fa-wrap{
+	display: block;
+}
+.fa-box .active span{
+	font-weight: bold;
+}
+.fa-box li:hover > span {
+	font-weight: bold;
+}
+.fa-box li:hover >.fa-wrap{
+	display: block;
+}

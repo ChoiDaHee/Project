@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML tables</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: 'Lato', 'Noto Sans KR', sans-serif;
+		font-size: 14px;
+		color: #131313;
+	}
+	h2{
+		/*background-color: orange;*/
+		border-bottom: 1px solid #333;
+		padding-bottom: 4px;
+		margin-bottom: 12px;
+	}
+	table{
+		width: 100%;
+	}
+	table, th, td{
+		border: 1px solid lightgray;
+		border-collapse: collapse;
+	}
+	caption{
+		caption-side: bottom;
+		margin-top: 6px;
+	}
+	thead{
+		background-color: #f5f6f8;
+	}
+	th, td{
+		padding: 12px;
+	}
+	td{
+		text-align: center;
+	}
+</style>
+<body>
+	<h1>표만들기</h1>
+
+	<h2>렌탈료 할인 제휴 카드</h2>
+	<table>
+		<caption>제휴카드 안내</caption>
+		<colgroup>
+			<col style="width: 10%;">
+			<col span="4">
+		</colgroup>
+		<thead>
+			<tr>
+				<th rowspan="2" scope="row">카드구분</th>
+				<th colspan="2" scope="col"><img src="../image/table/card_special_lotte_s.png" alt="스페셜롯데카드"></th>
+				<th colspan="2" scope="col"><img src="../image/table/card_02.png" alt="우리카드"></th>
+				<th colspan="2" scope="col"><img src="../image/table/hdcard1.png" alt="현대카드M에디션"></th>
+				<th colspan="2" scope="col"><img src="../image/table/card_01.png" alt="플러스하나카드"></th>
+			</tr>
+			<tr>
+				<th colspan="2" scope="col">청호나이스<br>페셜 롯데카드</th>
+				<th colspan="2" scope="col">청호나이스<br>우리카드</th>
+				<th colspan="2" scope="col">청호나이스<br>현대카드M Edition3</th>
+				<th colspan="2" scope="col">청호나이스<br>플러스 하나카드</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th rowspan="3" scope="row">전월실적 및 <br>월 렌탈료 할인</th>
+				<td>30만원 이상</td>
+				<td>13,000원</td>
+				<td>30만원 이상</td>
+				<td>13,000원</td>
+				<td>50만원 이상</td>
+				<td>13,000원</td>
+				<td rowspan="3">30만원 이상</td>
+				<td rowspan="3">13,000원</td>
+			</tr>
+			<tr>
+				<td>70만원 이상</td>
+				<td>17,000원	</td>
+				<td>70만원 이상	</td>
+				<td>16,000원</td>
+				<td>100만원 이상</td>
+				<td>20,000원</td>
+			</tr>
+			<tr>
+				<td>120만원 이상	</td>
+				<td>23,000원	</td>
+				<td>120만원 이상</td>
+				<td>20,000원</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2>인포샵</h2>
+	<table>
+		<caption>공연안내</caption>
+			<tbody>
+				<tr>
+					<th scope="row">공연예매/티켓문의</th>
+					<td>1544-2344</td>
+				</tr>
+				<tr>
+					<th scope="row">공연문의</th>
+					<td>031-230-3440</td>
+				</tr>
+				<tr>
+					<th scope="row">업무시간</th>
+					<td>평일 10:00 ~ 18:00 / 토요일, 일요일, 공휴일 10:00 ~ 17:00</td>
+				</tr>
+			</tbody>
+	</table>
+
+	<h2>예매취소 방법</h2>
+	<table>
+		<caption>취소 안내문</caption>
+		<colgroup>
+			<col span="2" style="background: skyblue">
+			<col style="background: lime">
+			<!-- <col> -->
+		</colgroup>
+		<!-- col은 각각의 열 -->
+		<thead>
+			<tr>
+				<th scope="col">공연일</th>
+				<th scope="col">취소 및 변경 가능시간</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>월요일 ~ 토요일, 공휴일	</td>
+				<td>관람 전일 오후 5시까지 가능</td>
+				<td rowspan="2">※ 관람일 전일 오후 5시 이후(토요일은 오전 11시) 또는 관람일 당일 예매하신건에 대해서는 예매후 취소/변경/환불 불가
+	            <br>※ 토요일이 공휴일인 경우 토요일 오전 11시 기준으로 적용됩니다.</td>
+			</tr>
+			<tr>
+				<td>일요일</td>
+				<td>토요일 오전 11시까지 가능</td>
+				<!-- <td></td> -->
+			</tr>
+		</tbody>
+	</table>
+	<!-- colspan 칸/rowspan: 줄 -->
+	
+	<h2>취소수수료</h2>
+	<table>
+		<caption>취소수수료 안내</caption>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">구분</th>
+				<th scope="col">취소수수료</th>
+				<th scope="col">비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>예매 후 7일 이내</td>
+				<td>없음</td>
+				<td rowspan="5">※ 예매당일에 취소하는 경우 이외에는 예매수수료가 환불되지 않음<br>※ 예매 후 7일 이내라도 취소시점이 공연일로부터 10일 이내라면 그에 해당하는 취소수수료 부과<br>
+	            ※ 취소시 예매수수료는 예매 당일 밤 12시 이전까지 환불되며, 그 이후 기간에는 환불되지 않습니다. <br>
+	            ※ 취소가능시간 이후에는 취소가 불가합니다.</td>
+			</tr>
+			<tr>
+				<td>예매 후 8일 ~<br>예매 후 10일 전</td>
+				<td>뮤지컬, 콘서트, 클래식 등 공연권 : 4,000원<br>
+	                연극, 전시 등 입장권 : 2,000원<br>
+	                (단,티켓 금액의 10% 이내)</td>
+			</tr>
+			<tr>
+				<td>관람일 9일 전 ~ 7일 전</td>
+				<td>티켓금액의 10%</td>
+			</tr>
+			<tr>
+				<td>관람일 6일 전 ~ 3일 전</td>
+				<td>티켓금액의 20%</td>
+			</tr>
+			<tr>
+				<td>관람일 2일 전 ~ 1일 전</td>
+				<td>티켓금액의 30%</td>
+			</tr>
+		</tbody>
+	</table>
+
+	
+	<!-- caption, colgroup, col, thead, tbody, tfoot, th, scope속성 -->
+
+	<h2>합계 table</h2>
+	<table>
+		<caption>표</caption>
+		<colgroup>
+			<col span="3">
+		</colgroup>
+		<thead>
+			<tr>
+				<td>시작</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>본문내용</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>끝</td>
+			</tr>
+		</tfoot>
+	</table>
+	<!-- 웹 접근성으로 따녀볼때 tfoot을 먼저 코딩하는데 그 이유는 결과값이 더 중요하기 때문이다. -->
+</body>
+</html>

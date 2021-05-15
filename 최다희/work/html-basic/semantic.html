@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Semantic Elements</title>
+</head>
+<body>
+	<!-- 
+	<div id="wrap">
+		<div id="header">
+			<h1><a href="">로고이미지</a></h1>
+			<div id="navigation">
+				<ul>
+					<li><a href="">메뉴1</a></li>
+					<li><a href="">메뉴2</a></li>
+					<li><a href="">메뉴3</a></li>
+				</ul>
+			</div>
+		</div>
+	    <div id="container">
+	    	
+	    </div>
+	    <div id="footer">
+	    	<p>푸터로고이미지</p>
+	    	<ul>
+	    		<li><a href="">sns아이콘</a></li>
+	    		<li><a href="">sns아이콘</a></li>
+	    		<li><a href="">sns아이콘</a></li>
+	    	</ul>
+	    	<address>주소</address>
+	    	<p>copyright&copy;</p>
+	    </div>
+	</div> 
+	-->
+
+	<!-- section, aside, article, header, nav, figuer, figcaption, details,
+		summary, mark, time -->
+	
+	<section>
+		html문서에 포함된 독립적인 섹션(section)울 정의할 때 사용
+		- h1~h6 제목요소를 꼭 포함해야만 한다.
+	</section>
+
+	<h1>이디야 메인</h1>
+	<div>
+		<section>
+			<h2>infomation card~~~~</h2>
+		</section>
+		<section>
+			<h2>factory</h2>
+		</section>
+	</div>
+
+	<section>
+		<h2>ediya coffee</h2>
+		<section>
+			
+		</section>
+	</section>
+
+	<article>
+		해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용
+		- 포럼 포스트, 블로그 포스트, 보도기사, 논평(comment), 날씨정보 등
+	</article>
+
+	<article>
+		<h1>제목</h1>
+		기, 승, 전, 결이 모두 들어가야함
+	</article>
+
+	<aside>
+		제3자 콘텐츠!
+		페이지의 다른 컨텐츠들과 약간의 연관성을 가지긴 하지만, 해당 컨텐츠로 분리시킬 수 있는 컨텐츠로 
+		구성된 페이지 영역을 정의
+		문서에 sidebar 로 배치
+
+		- 배너형태나 팝업 등등
+	</aside>
+
+	<header>
+		문서의 시작, 특정섹션의 시작 부분
+		- 로고
+		- 네비게이션
+		- 탑메뉴
+		- 검색
+		- 하나 이상의 제목요소
+	</header>
+
+	<footer>
+		문서의 끝, 특정섹션의 끝 부분
+		- 저작정보
+		- 저작권정보
+		- 연락처
+		- 사이트맵
+		- top버튼
+		- 연관페이지
+	</footer>
+	<!-- section이나 article 문서에 시작과 끝을 정의할 수 있는 부분에 사용 가능
+	- 대표인사말 같은 특정 단락 -->
+
+	<nav>
+		네비게이션 링크들의 집합을 정의할 때 사용
+		- 메뉴, 목차
+	</nav>
+	<header>
+		<h1><a href=""><img src="" alt="버거킹"></a></h1>
+		<nav>
+			<h2>제목요소가 꼭 들어가야 한다(버거킹사이트맵) - css로 hidden 처리</h2>
+			<ul>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- 웹접근성에서 스크린리더기가 탐색요소를 만나면 초기랜더링을 생략할지 여부 결정 -->
+	<figure>
+		삽화나 다이어그램, 사진 등과 같은 문서의 주요흐름과는 독립적인 컨텐츠를 정의할 때 사용
+		문서의 내용과는 연관성을 가지나, 해당 이미지 위치가 문서의 흐름과는 독립적이어서 제거해도
+		문서의 흐름에 영향을 주어서는 안된다.
+	</figure>
+	<!-- 이디야 메인 beanist에 대한 섹션 참고, 해당이미지들을 figure로 묶었을때와 아닐때의 섹션의 흐름에 영향을 미치는지 체크 -->
+	<figure>
+		<img src="제품" alt="">
+		<figcaption>모카블렌드커피믹스</figcaption> <!-- <-이미지 위에 써도 되긴함 -->
+	</figure>
+
+	<details>
+		사용자가 직접 조작하여 숨길 수 있는 부가적인 세부내용을 명시할 때 사용
+		open 속성이 설정되기 전까지 화면이 안보임
+		어떤 컨텐츠도 포함 가능
+		<summary>details요소에서 화면에 보일 제목을 명시할 때 사용</summary>
+	</details>
+
+	<details> <!-- ie 지원안함 -->
+		<summary>오늘의 금시세</summary>
+		<ul>
+			<li>14k</li>
+			<li>24k</li>
+			<li>18k</li>
+		</ul>
+	</details>
+
+	<p>mark요소는 인용문에 특별히 중요하다고 생각하지는 않으나, <mark>주시해야할 필요</mark>가 있는 부분에 mark 요소를 사용합니다.</p>
+	<p>현재 검색키워드를 강조표시할 때 사용.</p>
+	<p>mark요소를 하이라이트 표시만을 위해서 사용하지 말것</p>
+
+	<!-- 
+	<time>
+		사람이 읽을 수 있는 형태의 날짜와 시간데이터를 정의할 때 사용
+	</time>
+	 -->
+	<p>이번 콘서트는 <time datetime="2021-05-08T20:00:00">5월 8일 저녁 8시</time>부터 시작합니다.</p>
+</body>
+</html>

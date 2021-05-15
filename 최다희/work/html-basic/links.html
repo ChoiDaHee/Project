@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Links</title>
+	<style>
+		p{
+			height: 500px;
+		}
+		a{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<!-- html links - Hyperlinks -->
+	<a href="https://jejubeer.co.kr/shop" target="_blank">link text</a>
+	<!-- 절대경로 -->
+
+	<a href="formatting.html">formatting바로가기</a>
+	<a href="quotation.html">quotation바로가기</a>
+	<!-- 상대경로 -->
+
+	<a href="../image/html/imageMaps.html">imageMap바로가기</a>
+
+	<h2>팝업</h2>
+	<a href="#" onclick="window.open('https://m.naver.com')" title="새창">
+		네이버모바일
+	</a>
+
+	<!-- href="#" 임시링크 -->
+
+	<a href="#" onclick="window.open('https://m.naver.com','','width=380, height=800, left=20, top=40')" title="새창">
+		네이버 모바일
+	</a>
+
+	<p>여백</p>
+
+	<h2 id="king">
+		<img src="../image/logo_titleBar.png" alt="버거킹">
+	</h2>
+
+	<p>여백</p>
+
+	<a href="mailto:vhxjekgml@naver.com">운영자에게 메일 보내기</a>
+
+	<p>여백</p>
+
+	<a href="#king">버거킹탭</a>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Box-model</title>
+	<style>
+		*{
+			margin: 0;
+		}
+		/* 전체선택자 - body 안에 들어가는 모든 요소 */
+		p{
+			background-color: yellow;
+		}
+		.d1{
+			width: 300px;
+			border: 1px solid #000;
+			padding: 50px;
+			text-align: center;
+			margin: 20px;
+		}
+		.d2{
+			width: 300px;
+			border: 1px solid red;
+			padding: 50px;
+			margin: 20px;
+		}
+		/* 마진은 위아래로 중첩이 되면 큰 수를 따라간다 (마이너스값 가능) */
+		a{
+			padding: 20px;
+			margin: 20px;
+			background-color: darkgray;
+		}
+		/* 포르쉐사이트 로고 체크!! */
+		/* 인라인요소는 패딩이 모두 적용, 위아래 여백은 겹칠 수 있음, 공간만큼 내려오지 않음*/
+		span{
+			background-color: skyblue;
+			margin: 20px;
+		}
+		/* 인라인요소는 마진이 좌, 우만 적용! 중첩이 되어도 각자 적용 */
+
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quo delectus labore sapiente et sequi libero facilis? Dolorem dolor doloribus, animi? Blanditiis facere, porro delectus nemo esse, molestias eligendi. Fugiat, sed?</p>
+	<div class="d1">content1</div>
+	<div class="d2">content2</div>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel modi id cumque velit porro debitis corrupti dignissimos magni, quia necessitatibus delectus! Velit delectus nobis porro cumque voluptatum provident? Nemo, minus!</p>
+	<a href="#">inline element</a><span>me too</span>
+	<!-- html공간에서 여백은 스페이스바 한칸을 인식, 인라인속성끼리 나란히 놓았을 때 enter가
+		적용된 경우 사이에 한칸의 공백이 생긴다. -->
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus vitae animi perspiciatis nobis ipsa numquam quo neque optio quidem illum, mollitia sapiente aliquam, sit aut. Beatae maiores animi natus!</p>
+</body>
+</html>

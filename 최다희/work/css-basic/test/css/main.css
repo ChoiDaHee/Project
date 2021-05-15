@@ -1,0 +1,82 @@
+#container{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 48px 0;
+}
+.new-box{
+	/*background-color: yellow;*/
+	color: #1d1f22;
+	text-align: center;
+}
+.new-box > h2{
+	font-weight: 300;
+	font-size: 40px;
+}
+.new-box > ul {
+	margin: 30px 0;
+}
+.new-box li{
+	/*background-color: skyblue;*/
+	width: 25%;
+	float: left;
+	
+}
+.new-box li > a{
+	display: block;
+	margin-bottom: 20px;
+}
+.new-box img{
+	width: 90%;
+}
+.new-box a > h3{
+	font-size: 15px;
+	color: #333;
+}
+.new-box span{
+	font-size: 14px;
+}
+
+.now-box figure{
+	float: left;
+	width: 60%; /*이미지 사이즈 비율로 바꾼것 720*100/1200*/
+}
+.now-box img{
+	width: 100%;
+}
+.now-box > .now-txt{
+	float: right;
+	width: 380px;
+	padding-top: 80px;
+}
+.now-box h2{
+	font-size: 15px;
+	color: #8b8b8b;
+}
+.now-box h3 {
+	font-size: 38px;
+	color: #1d1f22;
+	margin: 30px 0 20px;
+}
+.now-box p{
+	font-size: 16px;
+	color: #1c1c1c;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+.now-box a{
+	display: block;
+	width: 140px;
+	height: 45px;
+	line-height: 45px;
+	background: #fff;
+	border: 1px solid #1d1f22;
+	font-size: 14px;
+
+	font-weight: 500;
+	color: #1d1f22;
+	text-align: center;
+}
+.now-box a:hover{
+	background: #1d1f22;
+	color: #fff;
+}

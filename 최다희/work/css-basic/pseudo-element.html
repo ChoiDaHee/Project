@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudo-element</title>
+ 	<style>
+ 		::selection {
+ 			color: #fff;
+ 			background-color: purple;
+ 		}
+ 		div{
+ 			border: 1px solid red;
+ 			padding: 12px;
+ 			margin: 12px;
+ 		}
+ 		.a1::after{
+ 			content: " 감사합니다.";
+ 		}
+ 		.b1::before{
+ 			content: "안녕하세요. ";
+ 		}
+ 		/*li{
+ 			list-style: none;
+ 		}*/
+ 		li::marker{
+ 			color: red;
+ 			font-size: 30px;
+ 		}
+ 		li::after{
+ 			content: "";
+ 			background-image: url("경로");
+ 		 	display: block;
+ 		 	width: 가로;
+ 		 	height: 세로;
+ 		}
+ 		.d1::first-letter{
+ 			background-color: orange;
+ 		}
+ 		.d2::first-line{
+ 			font-size: 24px;
+ 			background-color: skyblue;
+ 		}
+ 	</style>
+</head>
+<body>
+	<div class="a1">after가 들어간 div</div>
+	<div class="b1">before가 들어간 div</div>
+	<ul>
+		<li><a href="#">제품군 선택</a></li>
+	</ul>
+	<div class="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, asperiores saepe consequatur reiciendis adipisci pariatur assumenda omnis. Earum dicta molestias, voluptatibus enim nulla corrupti ab magnam amet hic ducimus tempore?</div>
+	<div class="d2">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Consequuntur, impedit deleniti, voluptatem enim harum excepturi a ea nesciunt porro sapiente minima maiores aliquid distinctio dolorem id perferendis recusandae, quae cumque.</div>
+</body>
+</html>

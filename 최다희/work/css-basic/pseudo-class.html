@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>가상 클래스 요소</title>
+	<style>
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+
+		ul{
+			display: none;
+		}
+		div{
+			cursor: pointer;
+		}
+		div:hover + ul{
+			display: block;
+		}
+		/*div:first-of-type{
+			background-color: skyblue;
+		}*/
+		/*section > p:first-of-type {
+			background-color: yellow;
+		}
+		section > p:last-of-type{
+			background-color: skyblue;
+		}*/
+
+		/* :-child는 모든 형제의 순서 :-of-type은 내가 선택한 요소의 같은 요소끼리의 순서 */
+		section > div:nth-of-type(2){
+			background-color: yellow;
+		}
+		section > div:nth-child(4){
+			background-color: skyblue;
+		}
+		/* only-child, only-of-type */
+		section :not(p){
+			color: #ff0000;
+		}
+	</style>
+</head>
+<body>
+	<a href="#">link</a>
+	<br>
+	<div><span>ko</span></div>
+	<ul>
+		<li><span>ko</span></li>
+		<li><span>eng</span></li>
+	</ul>
+	<section>
+		<blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus asperiores ducimus voluptate totam, architecto rerum officiis velit, atque autem mollitia earum esse nobis id, quaerat provident ea nostrum impedit.</blockquote>
+		<div>(f-child)Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ducimus nesciunt, neque mollitia nostrum unde nam ab quibusdam, rerum ex perspiciatis eum voluptatem similique quod tempore maxime repellendus, nemo consectetur atque.</div>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem obcaecati dolor nesciunt quibusdam, asperiores debitis vel, nostrum doloremque. Sapiente ratione et magni tempora officia dolores numquam ex iure labore eaque.</p>
+		<div>lorem ipsum</div>
+		<p>lorem ipsum</p>
+		<div>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Consectetur debitis, cum ab at ipsum rerum cupiditate maxime saepe, iusto necessitatibus iste consequatur porro. Error iusto vero fugit perferendis, obcaecati, suscipit.</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quas libero tenetur non dignissimos, sit assumenda ea beatae modi cumque asperiores pariatur! Eaque, voluptatibus veniam nesciunt tempore aliquam, deleniti aliquid!</p>
+	</section>
+</body>
+</html>

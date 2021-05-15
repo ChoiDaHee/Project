@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1, initial-scale=1.0">
+	<title>CSS background-image</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			/*background-image: url('../image/ico_nodata01_type02.png');*/
+			/*background-repeat: repeat-x;*/
+			/*background-repeat: no-repeat;*/
+			/*repeat,, no-repeat, repeat-x,, repeat-y*/
+			/*background-position: left bottom;*/
+			/*left top = 0 0 / %, px */
+			/*
+			bottom의 개념이 웹브라우저의 가장 하단이 아님!!!
+			bottom은 body안에 들어간 컨텐츠의 끝나는 부분!!
+			*/
+			/*background: color img repeat attachment position / size;*/
+			/*background: transparent / url("../image/ico_nodata01_type02.png") repeat-x scroll left bottom / auto;*/
+			background: url('../image/ico_nodata01_type02.png') repeat-x;
+		}
+		section{
+			width: 100%;
+			height: 250px;
+			margin: 100px 0;
+			/*background-image: url('../image/benjamin.jpg');
+			background-repeat: no-repeat;
+			background-position: center -100px;
+			background-attachment: fixed;*/
+			/*scroll, fixed*/
+			/*ios버전을 가진 아이폰에선 적용이 불가*/
+			background: url('../image/benjamin.jpg') no-repeat fixed center -100px; ok
+		}
+
+		div {
+			color: #fff;
+			/*background-color: rgb(0,128,0);
+			background-image: url(../image/logo_titleBar.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: scroll;*/
+			background: rgb(0,128,0) url(../image/logo_titleBar.png) no-repeat center;
+		}
+	</style>
+</head>
+<body>
+	<h1>컨텐츠를 채워보자</h1>
+	<section>
+		Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Aspernatur nulla modi aut qui, velit saepe cupiditate veniam praesentium, odit cum ut totam. Magni, officiis rem dolor dolore fuga at ipsum.
+	</section>
+	<div>
+		<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Sequi unde accusantium recusandae, aut magni blanditiis pariatur, debitis reiciendis molestiae! Delectus neque fugiat tempore natus hic in, nihil animi assumenda cupiditate.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corrupti laudantium cupiditate iusto non totam saepe doloremque ducimus voluptatibus quidem sit esse, minima dolore eligendi quo aliquid inventore voluptatem. Quae.</p>
+		<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. At, itaque nostrum molestiae fugit reprehenderit adipisci deserunt consequuntur nemo, tenetur totam dolorum debitis quisquam eum inventore, expedita dolore neque, necessitatibus quo.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam autem maxime ullam eveniet, pariatur quasi molestiae sequi soluta amet repudiandae tenetur sapiente dolores blanditiis fugit necessitatibus enim illum nulla unde?</p>
+		<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Saepe mollitia et amet quibusdam molestias maxime dolore ratione commodi molestiae alias, labore qui id natus sed perspiciatis provident ducimus quisquam earum.</p>
+	</div>
+	
+</body>
+</html>

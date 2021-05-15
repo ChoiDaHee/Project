@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>display</title>
+	<style>
+		body{
+			font-size: 12px;
+		}
+		p{
+			color: orange;
+		}
+		.p1{
+			display: none;
+			/*정보를 표기하지 않겠다는 의미, 보조기기에도 정보를 전달하지 않도록 처리*/
+		}
+		.p2{
+			display: inline;
+			visibility: hidden;
+			padding: 10px;;
+		}
+		.p3{
+			display: block;
+		}
+		.p4{
+			display: inline-block;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>display property</h1>
+	<h2>none</h2>
+	<div class="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt recusandae autem odit illo molestias, omnis, impedit velit hic minus veritatis <p class="p1">display sample</p> officia rem iusto, facilis natus. Eveniet animi deleniti rem odit.</div>
+
+	<h2>inline</h2>
+	<div class="d2">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Maxime quisquam temporibus inventore, esse deleniti dolores ullam dolor, tempore quasi, <p class="p2">display sample</p>vero neque hic doloribus tenetur? Nisi voluptates id minus modi numquam?</div>
+
+	<h2>block</h2>
+	<div class="d3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum porro commodi nemo iste error, sequi quia eligendi, <p class="p3">display sample</p>ab quidem reprehenderit libero necessitatibus ducimus hic ullam? Unde, voluptas? Sint, iste, corporis?</div>
+
+	<h2>inline-block</h2>
+	<div class="d4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reprehenderit atque placeat quod similique fugit blanditiis illum at, <p class="p4">display sample</p>optio dolores delectus quibusdam ad laboriosam itaque a doloribus molestiae impedit ducimus.</div>
+</body>
+</html>

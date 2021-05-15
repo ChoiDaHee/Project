@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>select element</title>
+</head>
+<body>
+	<form action="#">
+		<label for="lotte">선택하세요</label>
+		<select name="lotte" id="lotte">
+			<option value="Familysite">Family site</option>
+			<option value="lotteconf">롯데제과</option>
+			<option value="lpoint">L.POINT</option>
+			<option value="krispykremedoughnuts">크리스피크림도넛</option>
+			<option value="lottefood">롯데푸드</option>
+			<option value="">롯데주류BG</option>
+			<option value="">롯데아사히주류</option>
+			<option value="">롯데칠성주류</option>
+			<option value="">롯데백화점</option>
+			<option value="">롯데마트</option>
+			<option value="">롯데하이마트</option>
+			<option value="">롯데저러스</option>
+			<option value="">롯데슈퍼</option>
+			<option value="">롯데빅마켓</option>
+			<option value="">롯데시네마</option>
+			<option value="">롯데홈쇼핑</option>
+			<option value="">코리아세븐</option>
+			<option value="">유니클로</option>
+			<option value="">무인양품</option>
+		</select>
+
+		<select name="lotte1" id="lotte1">
+			<optgroup label="롯데채용센터">
+				<option value="">나뚜루</option>
+				<option value="">빼빼로</option>
+				<option value="">헬스원</option>
+			</optgroup>
+			<optgroup label="롯데칠성음료">
+				<option value="">롯데칠성몰</option>
+			</optgroup>
+			<optgroup label="롯데리아">
+				<option value="">롯데리아몰</option>
+			</optgroup>
+		</select>
+	</form>
+
+	<form action="#">
+		<label for="email">이메일 주소 입력 : </label>
+		<input type="email" id="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]" title="이메일양식">
+		<!-- [a-zA-Z0-9] 영문소문자나 영문대문자,, 숫자중 어느것잉라도 개수에 상관없음
+		[.]* 문자가 나와도 되고 나오지 않아도 됨 -->
+		<br>	
+		<label for="tel">전화번호 입력 : </label>
+		<input type="tel" name="tel" value="">
+		<!-- 읽기만 가능 수정할 수 없는 입력양식 -->
+	</form>
+</body>
+</html>

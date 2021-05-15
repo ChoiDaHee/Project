@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="font.css">
+	<title>CSS Fonts</title>
+	<style>
+		body{
+			font-size: 13px;
+			/*폰트의 단위 em, %, rem, vw*/
+		}
+		h1{
+			font-family: 'Roboto', sans-serif;
+			font-weight: 100;
+			font-size: 13px;
+		}
+		.p1{
+			font-family: "Times New Roman", Times, serif;
+			/*궁서체 연결*/
+		}
+		.p2{
+			font-family: Arial, Helverica, sans-serif;
+			/*고딕체 계열*/
+		}
+		.p3{
+			font-family: "Lucia Console", "Courier New", monospace;
+			/*고정길이 폰트 - 굴림과 굴림체(o) 구별(영문)*/
+
+		}
+		.p4{
+			font-family: 'Freckle Face', cursive;
+		}
+		.p5{
+			font-family: Gotham, sans-serif;
+			font-weight: bold;
+		}
+		em{
+			font-style: normal;
+		}
+		/* normal,, italic, oblique */
+		strong{
+			font-weight: normal;
+		}
+		/* normal, bold */
+		div > p{
+			font-variant: small-caps;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS font-family</h1>
+	<p>문단입니다, 저는 브라우저 기본 서체 입니다. w, i, I, l, L, o, O, 0</p>
+	<p class="p1">문단입니다, <strong>Times New Roman 폰트</strong> 입니다. w, i, I, l, L</p>
+	<p class="p2">문단입니다, Arial 폰트 입니다. w, i, I, l, L</p>
+	<p class="p3">문단입니다, <em>Lucida Console 폰트</em>입니다. w, i, I, l, L</p>
+	<p class="p4">문단입니다, google web font 입니다.</p>
+	<p class="p5">문단입니다, Gotham font폰트 입니다.</p>
+
+	<div>
+		<h2>web safe fonts</h2>
+		Arial, Verdana, Helvetica, Tahoma, Times New Roman, Georgia,
+		Courier New(Monospace), Brush Script MT(cursive)
+		<p>Arial, Verdana, Helvetica, Tahoma, Times New Roman, Georgia,
+		Courier New(Monospace), Brush Script MT(cursive)</p>
+	</div>
+	<div>
+		<h2>글꼴 규칙</h2>
+		<p>font-family적용시 서로 보완하는 글꼴을 찾아야 함, 너무 비슷하거나 너무 다르지 않으면서 조화를 이뤄야 함</p>
+		<p>글꼴 패밀리는 함께 설계 하는게 좋다. ex) times new roman, times / lucida, lucida sans...</p>
+		<p>font속성을 적용시 최상위 상단에는 font-family를 지정</p>
+		<p>font속성을 축약 한 경우 : font-style/font-variant/font-weight/font-size/line-height/font-family</p>
+		<!-- 
+			font: normal small-caps bold 12px/30px Arial, serif;
+			font속성을 축약할 경우 font-size와 font-family는 꼭 지정 해야 함
+			font: 20px Arial, sans-serif;
+		 -->
+		 2021-04-29 폰트 단위, html가계도, text속성
+	</div>
+</body>
+</html>

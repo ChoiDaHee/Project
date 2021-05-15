@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('font/gotham-bold.woff') format('woff');
+}

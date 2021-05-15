@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Forms - 입력양식</title>
+</head>
+<body>
+	<form action="서버로 전송될 입력정보가 저장되어질 문서의 주소(.php)" method="get/post">
+		<fieldset>
+			<!-- 연관된 요소들을 하나의 그룹으로 묶을 때 사용 -->
+			<legend>로그인 관리</legend> <!-- fieldset 요소의 캡션 -->
+			<label for="username">이름</label> : <input type="text" id="username" name="username" autofocus><br>
+			<label for="userid">아이디</label> : <input type="text" id="userid" name="userid"><br>
+			<label for="pwd">패스워드</label> : <input type="password" id="pwd" name="pwd" maxlength="16"><br>
+			<label for="">별명</label> : <input type="text" id="nickname" disabled>
+			<!-- disabled 속성이 명시된 input 요소는 사용불가, 사용자가 클릭불가, 또한 폼 데이터가 제출될 때 현재 disabled가 명시된 
+			input 요소의 데이터는 제출되지 않음 -->
+		</fieldset>
+		<fieldset>
+			<legend>추가 정보 사항</legend>
+			<label for="birth">생년월일</label> : <input type="text" id="birth" name="birth"><br>
+		</fieldset>
+		<!-- label 웹접근성작업시 꼭 체크 해당 폼요소의 id를 불러옴 -->
+
+	</form>
+	<form action="#">
+		<fieldset>
+			<legend>확인페이지</legend>
+			<label for="oname">이름</label> : <input type="text" id="oname" name="oname" value="최다희"><br>
+			<label for="search1">검색</label> : <input type="text" placeholder="검색어를 입력하세요">
+			<!-- input타입에서만 가능 text, password, email, tel, url, search / input 요소에 입력되어야 할 값에 대한 힌트를 제공
+			ie10 이상 지원 가능 -->
+			<br>	
+			<label for="oid">아이디</label> : <input type="text" id="oid" name="oid" required>
+			<br>
+			<span>아이디를 반드시 입력하여야 합니다.</span>
+			<!-- ie10이상, 사파리 지원불가 -->
+			<br>	
+			<input type="submit" value="전송">
+			<input type="reset">
+		</fieldset>	
+	</form>
+
+	<!-- 라디오버튼 무조건 택일 name값을 공통으로 사용(선택 안하면 에러남, 무조건 하나는 선택!) -->
+	<form action="#">
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">남자</label>
+		<input type="radio" id="female" name="gender" value="female">	
+		<label for="female">여자</label>	
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">other</label>
+        <br>	
+        <input type="radio" id="yes" name="agree" value="yes">
+        <label for="yes">동의합니다.</label>
+        <input type="radio" id="no" name="agree" value="no" checked>
+        <label for="no">동의하지않습니다.</label>
+	</form>
+
+	<!-- 체크박스는 복수 선택 할 때 사용, 선택하지 않아도 됨 -->
+	<form action="#">
+		<input type="checkbox" id="etc1" name="etc1" value="sns">
+		<label for="etc1">sns</label><br>	
+		<input type="checkbox" id="etc2" name="etc2" value="email">
+		<label for="etc2">email</label><br>
+		<input type="checkbox" id="etc3" name="etc3" value="phone">
+		<label for="etc3">phone</label><br>
+		<input type="checkbox" id="etc4" name="etc4" value="mail">
+		<label for="etc4">mail</label><br>
+	</form>
+
+	<form action="#">
+		<!-- <button></button> ie, edge지원불가 -->
+		<input type="button" onclick="alert('Hello World!')" value="Click me!">
+		<!-- 초기화, 전송 모두 불가 -->
+	</form>
+
+	<!-- html5에 추가된 속성 / ie에선 지원 불가-->
+	<form action="#">
+		<label for="favcolor">좋아하는 컬러를 선택하세요: </label>
+		<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+	</form>
+
+	<!-- html5에서 추가된 속성 / ie, safari지원 불가 -->
+	<form action="#">
+		<p>당신의 생일을 입력하세요</p>
+		<label for="birthday">Birthday</label>
+		<input type="date" id="birthday" name="birthday">
+		<input type="submit" value="submit">
+	</form>
+
+	<!-- html5에서 추가된 속성 / ie, safari, firefox 지원 불가 -->
+	<form action="#">
+		<p>오늘 날짜와 지금 현재 시간을 입력하세요.</p>
+		<input type="datetime-local" name="bday">
+		<input type="submit">
+
+		<p>생일에 해당하는 달을 입력하세요</p>
+		<input type="month" name="bday">
+	</form>
+ 	
+ 	<!-- html5에서 추가된 속성 / 모든 브라우저 지원 / 모바일 키패드-->
+	<form action="#">
+		<label for="email">이메일 주소 입력 : </label>
+		<input type="email" id="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]" title="이메일양식">
+		<!-- [a-zA-Z0-9] 영문소문자나 영문대문자,, 숫자중 어느것잉라도 개수에 상관없음
+		[.]* 문자가 나와도 되고 나오지 않아도 됨 -->
+		<br>	
+		<label for="tel">전화번호 입력 : </label>
+		<input type="tel" name="tel" value="010100000" readonly>
+		<!-- 읽기만 가능 수정할 수 없는 입력양식 -->
+	</form>
+
+	<form action="#">
+		<label for="myfile">파일첨부 : </label>
+		<input type="file" id="myfile" name="myfile">
+		<!-- 하나의 파일첨부만 가능 -->
+		<br>
+		<input type="file" id="myfile" name="myfile" multiple>
+		<!-- 여러개의 파일첨부 가능 -->
+		<br>	
+		<label for="char_name">캐릭터명 : </label>
+		<input type="text" name="char_name">
+		<input type="image" src="#" alt="제출버튼이미지">
+		<!-- 전송버튼으로 사용될 이미지를 정의할 때 사용 -->
+	</form>
+
+	<!-- html5에서 추가된 속성 / 0 ~ 100 / step(10) -->
+	<form action="#">
+		1부터 20까지의 짝수 : <input type="number" name="even" min="2" max="20" step="2">
+		<br>
+		<label for="vol">볼륨(0~50) : </label>
+		<input type="range" id="vol" name="vol" min="0" max="50">
+	</form>
+
+	<!-- html5에서 추가된 속성 / name 속성이 설정되어 있지 않으면 서버로 제출되지 않음 -->
+	<form action="#">
+		검색 <input type="search" name="q">
+	</form>
+
+	<!-- html5추가된 속성 / url 주소 입력할 수 있는 입력필드창 / 
+		데이터를 제출하기 전에 입력된 값이 유효한 url주소인지 여부를 자동으로 검증 -->
+	<form action="#">
+		블로그주소 <input type="url" name="myblog">
+	</form>
+
+	<!-- html5에서 input요소에 새롭게 추가된 속성 / 사파리에서 지원불가 -->
+	<form action="#">
+		학과 : <input type="text" name="st_department" list="depthList">
+		<br>
+		<datalist id="depthList">
+			<option value="컴퓨터공학과"></option>
+			<option value="영어영문과"></option>
+			<option value="경영학과"></option>
+			<option value="사회체육과"></option>
+		</datalist>
+	</form>
+
+	<form autocomplete="off">
+		<fieldset>
+			<legend>폼양식</legend>
+				<label for="name">이름 : </label><input type="text" id="fname" name="fname">
+				<br>
+				<label for="pwd">비밀번호 : </label><input type="text" id="pwd" name="pwd">
+				<br>
+				<label for="email">이메일 : </label><input type="email" id="email" name="email">
+				<br>
+				<input type="submit" value="전송">
+		</fieldset>
+	</form>
+	<!-- on이 기본값, 브라우저는 사용자가 이전에 입력한 값을 기반으로 자동으로 값을 완성함 -->
+
+	<h2>select Tag</h2>
+	<form action="#" id="myForm">
+		주문자 / 입금자 : <input type="text" name="name">
+		<br>
+		<input type="submit">
+	</form>
+	<!-- form속성이 html5에서 새롭게 추가된 속성 ie, edge지원불가 / select에서만 사용 가능-->
+	<select name="order" form="myForm">
+		<option value="americano">아메리카노</option>
+		<option value="caffe latte">카페라떼</option>
+		<option value="cafe mocha">카페모카</option>
+		<option value="espresso">에스프레소</option>
+	</select>
+
+	<form action="">
+		<select name="" id=""></select>
+	</form>
+</body>
+</html>

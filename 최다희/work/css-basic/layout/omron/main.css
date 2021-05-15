@@ -1,0 +1,75 @@
+section{
+	padding: 0 20px;
+	margin: 50px 0;
+	/*background-color: #acacac;*/
+}
+section > h2{
+	font-size: 60px;
+	font-weight: bold;
+	color: #222;
+	margin-bottom: 40px;
+}
+section .list-wrap {
+	width: 100%;
+	/*background-color: pink;*/
+	overflow-y: auto;
+	padding-bottom: 80px;
+}
+section ul {
+	width: 3760px;
+}
+section li {
+	float: left;
+	margin-right: 20px;
+}
+section li:last-child{
+	margin-right: 0;
+}
+section a {
+	color: #fff;
+	display: block;
+	width: 400px;
+	height: 260px;
+}
+section .txt-box{
+	padding-top: 180px;
+	padding-left: 20px;
+}
+section strong{
+	font-size: 15px;
+}
+section p {
+	margin-top: 0.9em;
+	font-size: 24px;
+}
+section li a {
+	background: url("comm/banner_img_01.jpg") no-repeat
+	center center / cover;
+}
+section li:first-child a{
+	background-image: url("comm/banner_img_01.jpg");
+}
+section li:nth-child(2) a{
+	background-image: url("comm/banner_img_02.jpg");
+}
+section li:nth-child(3) a{
+	background-image: url("comm/banner_img_03.jpg");
+}
+section li:nth-child(4) a{
+	background-image: url("comm/banner_img_04.jpg");
+}
+section li:nth-child(5) a{
+	background-image: url("comm/banner_img_05.jpg");
+}
+section li:nth-child(6) a{
+	background-image: url("comm/banner_img_06.jpg");
+}
+section li:nth-child(7) a{
+	background-image: url("comm/banner_img_07.jpg");
+}
+section li:nth-child(8) a{
+	background-image: url("comm/banner_img_08.jpg");
+}
+section li:nth-child(9) a{
+	background-image: url("comm/banner_img_09.jpg");
+}

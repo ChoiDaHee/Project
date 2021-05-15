@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@font-face{
+	font-family: "OTTOGISansLight";
+	src: url(../font/OTTOGISans_Light.woff) format('woff');
+}
+
+@font-face{
+	font-family: "OTTOGISans";
+	src: url(../font/OTTOGISans_Medium.woff) format('woff');
+}
+
+body{
+	font-family: "OTTOGISansLight", sans-serif;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media</title>
+</head>
+<body>
+	<h1>video영상 테스트</h1>
+	<video autoplay muted loop playsinline poster="../video/video_sample.jpg">
+		<source src="../video/video_sample.mp4" type="video/mp4">
+			<!-- 모든 브라우저에서 지원 가능한 코덱(업로드해도 자동재생 x)-->
+		<source src="../video/video_sample.webm" type="video/webm">
+			<!-- 모든 브라우저에서 지원 가능한 코덱 -->
+	</video>
+
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/MUZzkme8e9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+
+	
+</body>
+</html>

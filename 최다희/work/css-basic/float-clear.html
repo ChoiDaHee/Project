@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>clearfix</title>
+	<style>
+		.clearfix::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		div{
+			border: 3px solid lime;
+			padding: 5px;
+			/*overflow: auto;*/
+		}
+		img{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="clearfix">
+		<img src="../image/logo_titleBar.png" alt="버거킹로고">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolores neque perspiciatis architecto ipsam quisquam fugiat consequuntur blanditiis sunt, commodi nesciunt odio voluptate, ex recusandae possimus perferendis temporibus magnam ad.
+	</div>
+</body>
+</html>

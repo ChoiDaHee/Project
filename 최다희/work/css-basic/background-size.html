@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>background-size</title>
+	<style>
+		div{
+			width: 300px;
+			height: 250px;
+			margin: 20px;
+			border: 1px solid gray;
+		}
+		.d1{
+			/*background-image: url('../image/piwnicki.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: scroll;
+			background-size: contain;*/
+			background: url('../image/piwnicki.jpg') no-repeat center / contain;
+		}
+		.d1-1{
+			/*background-image: url('../image/math.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: scroll;
+			background-size: contain;*/
+			background: url('../image/math.jpg') no-repeat center / contain; 
+		}
+		.d2{
+			/*background-image: url('../image/piwnicki.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: scroll;
+			background-size: cover;*/
+			background: url('../image/piwnicki.jpg') no-repeat fixed center / cover;
+		}
+		.d2-1{
+			/*background-image: url('../image/math.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: scroll;
+			background-size: 120px auto;*/
+			background: url('../image/math.jpg') no-repeat center / 150px auto;
+		}
+		/*
+			cover는 중앙비율 - div 영역안에 빈틈없이 매워지게 함 / 이미지의 짧은 선분을 기준으로 꽉 차게 들어감
+			contain 원본비율 / 이미지 전체가 보여지도록 설정이 됨 - div 크기에 따라 이미지가 전체에 꽉 들어차지 못할수도 있음
+		*/
+	</style>
+</head>
+<body>
+	<div class="d1">contain-가로</div>
+	<div class="d1-1">contain-세로</div>
+	<div class="d2">cover-가로</div>
+	<div class="d2-1">cover-세로</div>
+</body>
+</html>
