@@ -79,6 +79,8 @@ section{
 /* ac-box */
 .ac-box{
     padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ccc;
 }
 .ac-box h2{
     font-size: 52px;
@@ -128,13 +130,24 @@ section{
     padding: 0.8em 2.2em;
     letter-spacing: 0.2em;
 }
+
 .ac-box ul .room-wrap{
     width: 100%;
-    padding: 0 5%;
+    /* padding: 0 5%; */
     position: absolute;
     left: 0;
     bottom: 0;
     box-sizing: border-box;
+}
+.ac-box ul::before{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 95%;
+    border: 1px solid #a9c638;
+    position: absolute;
+    left: 5%;
+	bottom: -8%;
 }
 .ac-box .active .room-wrap{
     display: block;
@@ -162,4 +175,5 @@ section{
     text-align: left;
     padding: 5%;
     box-sizing: border-box;
+    
 }
