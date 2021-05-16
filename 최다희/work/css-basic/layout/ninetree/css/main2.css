@@ -77,14 +77,30 @@ section{
 } */
 
 /* ac-box */
+.ac-box{
+    padding-top: 100px;
+}
 .ac-box h2{
     font-size: 52px;
     color: #1c1c1c;
     text-align: center;
 }
+.ac-box ul{
+    text-align: center;
+    /* float: left; */
+    /* padding: 60px 0 80px; */
+   padding-bottom: 35%;
+   position: relative;
+}
+.ac-box ul li{
+    display: inline-block;
+    padding: 40px 12px;
+    /* float: left; */
+}
 .ac-box ul li span{
     font-size: 13px;
     color: #a9c638;
+    cursor: pointer;
 }
 .ac-box .room-wrap .txt-box h3{
     font-size: 36px;
@@ -92,8 +108,58 @@ section{
 }
 .ac-box .room-wrap .txt-box p{
     font-size: 14px;
+    line-height: 1.5em;
     color: #1c1c1c;
+    margin: 20px 0 40px;
 }
 .ac-box .room-wrap .txt-btn {
-
+    font-size: 12px;
+    font-weight: bold;
+}
+.ac-box .room-wrap .txt-btn .btn-de{
+    background: #858585;
+    color: #fff;
+    padding: 0.8em 2.2em;
+    letter-spacing: 0.2em;
+}
+.ac-box .room-wrap .txt-btn .btn-bn{
+    background: #a9c638;
+    color: #fff;
+    padding: 0.8em 2.2em;
+    letter-spacing: 0.2em;
+}
+.ac-box ul .room-wrap{
+    width: 100%;
+    padding: 0 5%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+.ac-box .active .room-wrap{
+    display: block;
+}
+.ac-box li .room-wrap{
+    background-color: #fff;
+    display: none;
+}
+.ac-box .active span{
+    font-weight: bold;
+}
+.ac-box li span:hover {
+    font-weight: bold;
+}
+.ac-box li:hover > .room-wrap{
+    display: block;
+}
+.ac-box .room-wrap img{
+    width: 50%;
+    float: left;
+}
+.ac-box .room-wrap .txt-box{
+    width: 50%;
+    float: right;
+    text-align: left;
+    padding: 5%;
+    box-sizing: border-box;
 }
