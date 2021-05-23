@@ -33,6 +33,77 @@ header .navbar > ul li a{
 header .navbar > ul li a:hover{
     color: #de071a;
 }
+header .navbar .icons-nav{
+    display: flex;
+}
+header .navbar .icons-nav ul {
+    display: flex;
+}
+header .navbar .icons-nav .search-btn{
+    width: 52px;
+    height: 58px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+}
+header .navbar .icons-nav > img{
+    width: 19px;
+    height: 19px;
+}
+header .navbar .icons-nav ul {
+    padding: 0 4px 0;
+}
+header .navbar .icons-nav .lang{
+    width: 67.94px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+header .navbar .icons-nav .lang a::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 7px;
+    background: url('../img/tiny_downBlack_triangle.png') no-repeat;
+    margin-left: 8px;
+    box-sizing: border-box;
+}
+header .navbar .icons-nav .lang a{
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    padding-top: 20px;
+    letter-spacing: 0.1em;
+}
+header .navbar .icons-nav .link-btn{
+    width: 111.53px;
+    background-color: #de071a;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+header .navbar .icons-nav .link-btn a{
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 20px;
+    letter-spacing: 0.2em;
+}
+header .navbar .icons-nav .link-btn a::after{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    background: url('../img/tiny_right_triangle.png') no-repeat;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+header 
 #wrap h2{
     font-size: 24px;
     font-weight: bold;
@@ -58,7 +129,7 @@ header .navbar > ul li a:hover{
     color: #fff;
 }
 footer{
-    font-weight: bold;
+    font-weight: 500;
 }
 footer address .ad-txt{
     font-size: 13px;
