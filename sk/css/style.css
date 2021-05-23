@@ -1,0 +1,74 @@
+#container{
+    width: 100%;
+}
+header{
+    width: 100%;
+}
+header .navbar{
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar > img{
+    width: 44px;
+    height: 35.44px;
+    margin: 5px 20px;
+}
+header .navbar > ul{
+    display: flex;
+    justify-content: space-between;
+}
+header .navbar > ul li{
+    padding: 10px 0 14px;
+    margin: 0 17px;
+    text-align: center;
+}
+header .navbar > ul li a{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    padding: 10px;
+}
+header .navbar > ul li a:hover{
+    color: #de071a;
+}
+#wrap h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fc6620;
+}
+#wrap h2 > span{
+    color: #de071a;
+}
+.gate-sec ul p{
+    font-size: 35px;
+    color: #fff;
+}
+.gate-sec ul span{
+    font-size: 17px;
+    color: #fff;
+}
+.gate-sec ul em{
+    font-size: 20px;
+    font-weight: bold;
+}
+.high-sec p{
+    font-size: 23px;
+    color: #fff;
+}
+footer{
+    font-weight: bold;
+}
+footer address .ad-txt{
+    font-size: 13px;
+    color: #000;
+}
+footer address .copy-txt{
+    font-size: 14px;
+    color: #000;
+}
+footer .sitemap{
+    font-size: 13px;
+    color: #333;
+}
