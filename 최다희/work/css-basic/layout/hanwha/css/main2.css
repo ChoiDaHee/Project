@@ -1,0 +1,129 @@
+#container{
+    font-size: 62.5%;
+}
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 50px 0;
+    background: url('../pc/images/section03_bg.png') no-repeat 0 0 / contain;
+}
+#wrap .txt-box{
+    padding: 120px 0;
+}
+#wrap h2{
+    font-size: 4.5em;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgb(0 0 0 / 60%);
+    margin-bottom: 20px;
+}
+#wrap .txt-box p{
+    font-size: 2.2em;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgb(0 0 0 / 60%);
+}
+.inner-box{
+    width: 1180px;
+    margin: 0 auto;
+}
+.inner-box ul {
+    width: 100%;
+    margin-bottom: 80px;
+}
+.inner-box > ul li{
+    float: left;
+    width: 33.33%;
+    height: 465px;
+    background: #f4f4f4;
+    padding: 95px 0;
+    box-sizing: border-box;
+}
+.inner-box > ul li:nth-child(2){
+    background: #f8f8f8;
+}
+.inner-box ul strong{
+    display: block;
+    font-size: 3em;
+    font-weight: 600;
+    color: #323232;
+}
+.inner-box ul span{
+    font-size: 1.7em;
+    font-weight: bold;
+    line-height: 2em;
+}
+.inner-box ul p::before{
+    content: "";
+    display: block;
+    width: 72px;
+    height: 72px;
+    background-image: url('../pc/images/pr_main_ico01.png');
+    margin: 30px auto;
+}
+.inner-box ul li:nth-child(2) p::before{
+    background-image: url('../pc/images/pr_main_ico02.png');
+}
+.inner-box ul li:last-child p::before{
+    background-image: url('../pc/images/pr_main_ico03.png');
+}
+.inner-box ul p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #626262;
+    line-height: 1.6em;
+}
+.inner-box .contact{
+    width: 100%;
+    text-align: left;
+}
+.inner-box .contact strong{
+    font-size: 2.4em;
+    font-weight: 600;
+    color: #323232;
+}
+.inner-box .contact p{
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #626262;
+    margin: 20px 0 30px;
+    line-height: 1.5em;
+}
+.inner-box .contact-box{
+    width: 47.5%;
+    float: left;
+    /* margin-right: 60px; */
+}
+.inner-box .contact-box ul{
+    text-align: center;
+    border: 2px solid #e2e2e2;
+    position: relative;
+}
+.inner-box .contact-box ul li{
+    float: left;
+    width: 50%;
+    padding: 1.7em;
+    box-sizing: border-box;
+}
+.inner-box .contact-box ul li:first-child::after{
+    content: "";
+    display:block;
+    width: 1px;
+    height: 80%;
+    background: #ccc;
+    position: absolute;
+    top: 10px;
+    right: 50%;
+}
+.inner-box .contact-box ul .tit{
+    display: block;
+    font-size: 1.8em;
+    color: #f60;
+}
+.inner-box .contact-box ul .sub-tit{
+    font-size: 2em;
+    color: #323232;
+}
+.inner-box .fp-box{
+    width: 47.5%;
+    float: right;
+}

@@ -1,0 +1,61 @@
+#container{
+    width: 100%;
+    padding: 100px 50px;
+    box-sizing: border-box;
+    
+}
+section{
+    width: 1280px;
+    margin: 0 auto;
+}
+section h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+section h2::after{
+    content: "";
+    display: block;
+    width: 40px;
+    border: 1px solid black;
+    margin: 30px auto 20px;
+}
+section p{
+    font-size: 20px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 50px;
+}
+section ul .txt-box .tag-box strong::before{
+    content: "#";
+    display: inline-block;
+}
+section ul .txt-box .tag-box{
+    font-size: 16px;
+    color: #777;
+    margin: 30px 0 10px;
+}
+section ul .txt-box h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+ul li::before{
+    co
+}
+ul li{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+ul li:nth-child(4), li:nth-child(8){
+    margin-right: 0px;
+}
+ul li a{
+    display: block;
+}
+ul li a img{
+    width: 305px;
+    height: 215px;
+}
