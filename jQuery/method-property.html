@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        * { margin: 5px; }
+		pre { display: none; }
+    </style>
+</head>
+<body>
+    <div id="site">
+		<a href="https://www.daum.net" target="_blank">다음</a>
+		<a href="https://www.naver.com" target="_blank">네이버</a>
+		<a href="https://www.nate.com" target="_blank">네이트</a>
+
+        <img src="../sk/img/20210302170916(0).jpg" alt="sk사진">
+	</div>
+
+	<script>
+		console.log($('#site > a:eq(0)').attr("href"));
+		$('#site > img').attr("src", "../sk/img/20171214113054(0).jpg");
+		$('#site > a').attr('title', function() {
+			return "새창";
+		})
+	</script>
+
+	<input type="checkbox" id="html"><label for="html">html</label>
+	<input type="checkbox" id="css"><label for="css">css</label>
+
+	<script>
+		console.log($('input:checkbox').eq(0).attr("checked"));
+		console.log($('input:checkbox').eq(1).prop("checked"));
+
+		$('input:checkbox').eq(0).attr("checked", "checked");
+		$('input:checkbox').eq(1).prop("checked", true);
+
+		console.log($('input:checkbox').eq(0).attr("checked"));
+		console.log($('input:checkbox').eq(1).prop("checked"));
+	</script>
+
+	<pre>
+		attr() // 선택한 요소의 속성을 선택, 생성, 변경 가능
+		prop() // 자바스크립트의 프로퍼티에 관련된 메서드, true나 false로 제어 가능
+	</pre>
+</body>
+</html>
