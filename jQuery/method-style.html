@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery 메서드</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; }
+        pre { display: none; }
+
+        div:first-child {
+            background-color: red;
+        }
+        div:nth-child(2) {
+            background-color: orange;
+        }
+        div:nth-child(3) {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>내용1</div>
+	<div>내용2</div>
+	<div>내용3</div>
+	
+	<script>
+		// $('div').eq(0).css( {
+		// 	"padding" : 10,
+		// 	"text-align" : "center"
+		// })
+		// $('div').eq(1).css("width", "100px").css("height", "100px");
+	</script>
+
+    <script>
+        $('div').eq(0).css({
+            "padding" : 10,
+            "text-align" : "center"
+        })
+        $('div').eq(1).css("width", "100px").css("height", "100px")
+        $('div').eq(2).css("font-size", "36px")
+    </script>
+
+	<pre>
+		css() // 스타일 속성을 불러오거나, 변경할 때 사용
+	</pre>
+</body>
+</html>
