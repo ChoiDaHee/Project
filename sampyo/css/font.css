@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(../font/NotoSansKR-Black.otf) format("OpenType");
+}
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(../font/NotoSansKR-Black.otf) format("OpenType");
+}
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(../font/NotoSansKR-Bold.otf) format("OpenType");
+}
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(../font/NotoSansKR-Light.otf) format("OpenType");
+}
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(../font/NotoSansKR-Medium.otf) format("OpenType");
+}
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(../font/NotoSansKR-Regular.otf) format("OpenType");
+}
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(../font/NotoSansKR-Thin.otf) format("OpenType");
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
